@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teste grilă</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Teste grilă</h1>
+    <nav>
+      <button id="nav-setup" class="nav active">Test nou</button>
+      <button id="nav-stats" class="nav">Statistici</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Configurare -->
+    <section id="view-setup">
+      <h2>Alege capitolele</h2>
+      <div id="chapters"></div>
+
+      <h2>Câte întrebări?</h2>
+      <input type="number" id="count" min="1" value="10">
+      <span id="available" class="muted"></span>
+
+      <h2>Mod de testare</h2>
+      <label class="choice"><input type="radio" name="mode" value="imediat" checked>
+        Aflu imediat dacă am răspuns corect</label>
+      <label class="choice"><input type="radio" name="mode" value="final">
+        Aflu rezultatul abia la final</label>
+
+      <h2>Opțiuni</h2>
+      <label class="choice"><input type="checkbox" id="only-wrong">
+        Doar întrebările la care am greșit ultima dată</label>
+
+      <p id="setup-error" class="error"></p>
+      <button id="start" class="primary">Începe testul</button>
+    </section>
+
+    <!-- 2. Test -->
+    <section id="view-test" hidden>
+      <div class="progress"><div id="bar"></div></div>
+      <p id="progress-text" class="muted"></p>
+      <p id="q-chapter" class="muted"></p>
+      <h2 id="q-text"></h2>
+      <div id="options"></div>
+      <div id="feedback"></div>
+      <button id="next" class="primary" hidden>Următoarea</button>
+    </section>
+
+    <!-- 3. Rezultate -->
+    <section id="view-results" hidden>
+      <h2 id="score"></h2>
+      <div id="chapter-scores"></div>
+      <h2>Întrebări greșite</h2>
+      <div id="wrong-list"></div>
+      <button id="again" class="primary">Test nou</button>
+    </section>
+
+    <!-- 4. Statistici -->
+    <section id="view-stats" hidden>
+      <h2>Rezultate pe capitole</h2>
+      <div id="stats-chapters"></div>
+      <h2>Cel mai des greșite</h2>
+      <div id="stats-wrong"></div>
+      <h2>Backup</h2>
+      <p class="muted">Datele stau doar în acest browser. Fă export din când în când.</p>
+      <button id="export">Export JSON</button>
+      <label class="file-btn">Import JSON<input type="file" id="import" accept=".json" hidden></label>
+      <button id="reset" class="danger">Șterge toate datele</button>
+    </section>
+  </main>
+
+  <script src="intrebari.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
