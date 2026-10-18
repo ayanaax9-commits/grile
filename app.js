@@ -25,8 +25,8 @@ function save(key, val) {
 // ---------- Index întrebări ----------
 const toate = [];       // toate întrebările, cu capitolul atașat
 const dupaId = {};
-DATE.capitole.forEach(c => c.intrebari.forEach(q => {
-  const item = { ...q, cap: c.id, capNume: c.nume, multi: Array.isArray(q.corect), corecte: [].concat(q.corect) };
+DATE.capitole.forEach(c => c.intrebari.forEach((q, idx) => {
+  const item = { ...q, nr: idx + 1, cap: c.id, capNume: c.nume, multi: Array.isArray(q.corect), corecte: [].concat(q.corect) };
   toate.push(item);
   dupaId[q.id] = item;
 }));
@@ -125,6 +125,7 @@ function renderQuestion() {
   $("q-text").textContent = q.text;
   $("feedback").textContent = "";
   $("feedback").className = "";
+  $("q-nr").textContent = "";
   $("next").hidden = true;
   $("next").textContent = etichetaNext();
 
@@ -173,6 +174,7 @@ function reveal(q) {
     $("feedback").textContent = `Greșit. Răspuns corect: ${textCorecte(q)}`;
     $("feedback").className = "bad";
   }
+  $("q-nr").textContent = `Grila nr. ${q.nr} (${q.capNume})`;
   $("next").hidden = false;
   $("next").textContent = etichetaNext();
 }
