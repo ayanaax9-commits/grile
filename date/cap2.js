@@ -81,7 +81,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Țesutul osos — substanță fundamentală dură — rol de suport",
       "Țesutul adipos — depozitează grăsime — accentuează șocurile",
       "Sângele — substanță fundamentală lichidă — matrice solidă apărută înaintea declanșării procesului de coagulare",
-      "Sângele — substanță fundamentală lichidă — transportă gaze respiratorii (02, CO>) și nutrimente",
+      "Sângele — substanță fundamentală lichidă — transportă gaze respiratorii (02, CO2) și nutrimente",
       "Țesuturi epiteliale — unele sunt adaptate pentru absorbția substanțelor nutritive din tractul gastrointestinal — altele, cum este epiteliul din componența glandelor, sunt adaptate pentru secreția de substanțe"
     ],
     "corect": [0, 3, 4]
