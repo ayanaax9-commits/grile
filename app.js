@@ -68,7 +68,7 @@ function renderSetup() {
       <input type="checkbox" class="cap-check" value="${esc(c.id)}">
       ${esc(c.nume)} <span class="muted">(${c.intrebari.length} întrebări)</span>
     </label>`).join("");
-  document.querySelectorAll(".cap-check, #only-wrong").forEach(el => el.onchange = updateAvailable);
+    document.querySelectorAll("#from, #to").forEach(el => el.oninput = updateAvailable);
   updateAvailable();
 }
 
@@ -79,6 +79,9 @@ function selectedPool() {
     const gresite = greseliRecente();
     pool = pool.filter(q => gresite.has(q.id));
   }
+  const de = parseInt($("from").value, 10) || 1;
+  const pana = parseInt($("to").value, 10) || Infinity;
+  pool = pool.filter(q => q.nr >= de && q.nr <= pana);
   return { caps, pool };
 }
 
