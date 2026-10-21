@@ -2,6 +2,19 @@
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
+// ordine = indecșii originali ai variantelor, în ordinea în care se afișează
+// alese = indecșii originali bifați de tine (sau undefined dacă nu se știu)
+function reviewHTML(q, ordine, alese) {
+  return ordine.map(i => {
+    const corect = q.corecte.includes(i);
+    const ales = !!alese && alese.includes(i);
+    let cls = "";
+    if (corect) cls = "correct" + (alese && !ales ? " missed" : "");
+    else if (ales) cls = "wrong";
+    return `<button class="option ${cls}" disabled>${esc(q.raspunsuri[i])}</button>`;
+  }).join("");
+}
+
 // Fisher-Yates
 function shuffle(arr) {
   const a = [...arr];
@@ -100,11 +113,18 @@ $("start").onclick = () => {
   if (!pool.length) return $("setup-error").textContent = "Nu există întrebări disponibile cu aceste setări.";
   if (!n || n < 1) return $("setup-error").textContent = "Introdu un număr valid de întrebări.";
 
-  const alese = shuffle(pool).slice(0, n).map(q => ({
-    ...q,
-    // variantele amestecate; păstrăm indexul original ca să știm care e cea corectă
-    opt: shuffle(q.raspunsuri.map((text, i) => ({ text, i })))
-  }));
+  const ordonate = $("shuffle-q").checked ? shuffle(pool) : pool;
+
+  const alese = ordonate.slice(0, n).map(q => {
+    const variante = q.raspunsuri.map((text, i) => ({ text, i }));
+    // variantele de o singură literă (A-E) nu se amestecă niciodată
+    const literele = q.raspunsuri.every(t => t.length === 1);
+    return {
+      ...q,
+      opt: ($("shuffle-a").checked && !literele) ? shuffle(variante) : variante
+    };
+  });
+
   test = {
     intrebari: alese,
     alegeri: new Array(alese.length).fill(null), // indexul în q.opt
@@ -201,7 +221,7 @@ function finish() {
     const alese = test.alegeri[idx].map(k => q.opt[k]);
     const p = scor(q, test.alegeri[idx]);
     const ok = p === 1;
-    istoric.push({ qid: q.id, cap: q.cap, ok, scor: p, ts });
+    istoric.push({ qid: q.id, cap: q.cap, ok, scor: p, ts, alese: alese.map(o => o.i) });
     return { q, alese, ok, p };
   });
   save(KEY_ISTORIC, istoric);
@@ -223,18 +243,21 @@ function finish() {
   // greșite
   const gresite = rezultate.filter(r => !r.ok);
   const coment = load(KEY_COMENT, {});
-  $("wrong-list").innerHTML = gresite.length ? gresite.map(r => `
+  $("wrong-list").innerHTML = gresite.length ? `
+  <p class="muted">Verde = corect · verde punctat = corect, dar nebifat · roșu = bifat greșit</p>` +
+  gresite.map(r => `
     <div class="card">
-      <p class="muted">${esc(r.q.capNume)}</p>
+      <p class="muted">${esc(r.q.capNume)} · grila nr. ${r.q.nr}</p>
       <p><strong>${esc(r.q.text)}</strong></p>
-      <p class="bad">Răspunsul tău: ${esc(r.alese.map(o => o.text).join(', '))}</p>
+      ${reviewHTML(r.q, r.q.opt.map(o => o.i), r.alese.map(o => o.i))}
       ${r.p > 0 ? `<p class="partial">Punctaj parțial: ${fmt(r.p)} din 1</p>` : ""}
-      <p class="ok">Răspuns corect: ${esc(textCorecte(r.q))}</p>
       <textarea data-qid="${esc(r.q.id)}" placeholder="Comentariu (de ce ai greșit?)">${esc(coment[r.q.id] || "")}</textarea>
-    </div>`).join("") : `<p>Nicio greșeală. Bravo!</p>`;
-  bindComments();
+    </div>`).join("")
+  : `<p>Nicio greșeală. Esti boss de boss!!</p>`;
+   bindComments();
   show("results");
 }
+
 
 function bindComments() {
   document.querySelectorAll("textarea[data-qid]").forEach(t => {
@@ -248,8 +271,44 @@ function bindComments() {
 
 $("again").onclick = () => { renderSetup(); show("setup"); };
 
+// statisticile pe teste
+function renderTests() {
+  const istoric = load(KEY_ISTORIC, []);
+  const grupe = {};
+  istoric.forEach(r => (grupe[r.ts] ??= []).push(r));
+  const teste = Object.entries(grupe).sort((a, b) => b[0] - a[0]); // cele mai noi primele
+  const coment = load(KEY_COMENT, {});
+
+  $("stats-tests").innerHTML = teste.length ? teste.map(([ts, rows], n) => {
+    const puncte = rows.reduce((s, r) => s + (r.scor ?? (r.ok ? 1 : 0)), 0);
+    const p = Math.round(puncte / rows.length * 100);
+    const data = new Date(Number(ts)).toLocaleString("ro-RO");
+    const caps = [...new Set(rows.map(r => numeCap[r.cap] || r.cap))].join(", ");
+    const intrebari = rows.map(r => {
+      const q = dupaId[r.qid];
+      if (!q) return "";
+      const sc = r.scor ?? (r.ok ? 1 : 0);
+      const cls = sc === 1 ? "ok" : sc > 0 ? "partial" : "bad";
+      return `<div class="card">
+        <p class="muted">${esc(q.capNume)} · grila nr. ${q.nr}</p>
+        <p class="${cls}"><strong>${esc(q.text)}</strong></p>
+        ${reviewHTML(q, q.raspunsuri.map((_, i) => i), r.alese)}
+        <p class="${cls}">${sc === 1 ? "Corect" : sc > 0 ? `Parțial: ${fmt(sc)} din 1` : "Greșit"}</p>
+        <textarea data-qid="${esc(q.id)}" placeholder="Comentariu">${esc(coment[q.id] || "")}</textarea>
+      </div>`;
+    }).join("");
+    return `<details class="card">
+      <summary>Test ${teste.length - n} · ${esc(data)} · ${fmt(puncte)} / ${rows.length} (${p}%)</summary>
+      <p class="muted">${esc(caps)}</p>
+      ${intrebari}
+    </details>`;
+  }).join("") : `<p class="muted">Niciun test încă.</p>`;
+  bindComments();
+}
+
 // ---------- 4. Statistici ----------
 function renderStats() {
+  renderTests();
   const istoric = load(KEY_ISTORIC, []);
   if (!istoric.length) {
     $("stats-chapters").innerHTML = `<p class="muted">Nu ai încă răspunsuri. Începe un test.</p>`;
@@ -262,6 +321,7 @@ function renderStats() {
     perCap[r.cap].total++;
     perCap[r.cap].ok += r.scor ?? (r.ok ? 1 : 0); // intrările vechi nu au "scor"
     perQ[r.qid] ??= { gresit: 0, total: 0 };
+      if (r.alese) perQ[r.qid].ultim = r.alese; // ultima alegere (intrările vechi nu o au)
     perQ[r.qid].total++;
     if (!r.ok) perQ[r.qid].gresit++;
   });
@@ -281,10 +341,10 @@ function renderStats() {
     return `<div class="card">
       <p class="muted">${esc(q.capNume)} · răspuns incomplet sau greșit de ${s.gresit} ori din ${s.total}</p>
       <p><strong>${esc(q.text)}</strong></p>
-      <p class="ok">Răspuns corect: ${esc(textCorecte(q))}</p>
+      ${reviewHTML(q, q.raspunsuri.map((_, i) => i), s.ultim)}
       <textarea data-qid="${esc(id)}" placeholder="Comentariu">${esc(coment[id] || "")}</textarea>
     </div>`;
-  }).join("") : `<p class="muted">Nicio greșeală încă.</p>`;
+  }).join("") : `<p class="muted">Nicio greșeală... încă.</p>`;
   bindComments();
 }
 

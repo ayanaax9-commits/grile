@@ -10,6 +10,8 @@
     --part: #dcc48e; --ok-bg: #1d3a2b; --bad-bg: #432030;
   }
 }
+summary { cursor: pointer; font-weight: 600; }
+details .card { margin-left: 0; }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: system-ui, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
 header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 14px 20px; background: var(--card); border-bottom: 1px solid var(--line); }
