@@ -1952,7 +1952,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Firul de păr — proliferarea celulelor conjunctive din papila dermică",
       "Firul de păr — proliferarea celulelor bazale din bulb",
-      "Axul firului de păr — celule din stratul bazal al epidermului, care se cheratinizează și MOI",
+      "Axul firului de păr — celule din stratul bazal al epidermului, care se cheratinizează și mor",
       "Papila de la baza foliculului pilos — țesut conjunctiv, vase de sânge și nervi",
       "Axul firului de păr — celule dermice care mor"
     ],
