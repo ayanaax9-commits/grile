@@ -144,7 +144,7 @@ function renderQuestion() {
   test.checked = false;
   $("progress-text").textContent = `Întrebarea ${test.index + 1} din ${total}`;
   $("bar").style.width = `${(test.index / total) * 100}%`;
-  $("q-chapter").textContent = q.capNume + (q.multi ? " (alege toate răspunsurile corecte)" : "");
+  $("q-chapter").textContent = q.multi ? "Alege toate răspunsurile corecte" : "";
   $("q-text").textContent = q.text;
   $("feedback").textContent = "";
   $("feedback").className = "";
