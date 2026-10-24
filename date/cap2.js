@@ -2311,7 +2311,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "text": "Alegeți acele răspunsuri care conțin ambele afirmații adevărate, aflate în relație efect - cauză:",
     "raspunsuri": [
       "Sângele este un tip aparte de țesut conjunctiv. Sângele are în compoziția lui apa, rezultată din deshidratarea celulelor sanguine",
-      "Osul are o rezistență crescută față de cartilaj. Substanța fundamentală a țesutului 0505 conține săruri minerale de calciu și fosfați",
+      "Osul are o rezistență crescută față de cartilaj. Substanța fundamentală a țesutului osos conține săruri minerale de calciu și fosfați",
       "Mușchiul striat scheletic se mai numește și mușchi voluntar. Mușchiul striat scheletic este sub control nervos conștient (inervație somatică)",
       "La persoane în vârstă poate să apară o afecțiune complexă, denumită osteoporoză. La persoane în vârstă, resorbția osoasă poate fi mai pronunțată decât formarea țesutului",
       "Membranele seroase permit mișcări fără fricțiune. Pleura, pericardul și peritoneu lubrifiate cu un fluid seros"
