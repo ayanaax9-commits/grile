@@ -104,7 +104,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Joncțiunile strânse sunt rar întâlnite între celulele țesutului epitelial",
       "Pot fi de tip „gap”, situație în care permit comunicarea intercelulară",
-      "Desmozomii sunt joncțiuni strânse situate între membranele celulele” musculare netede adiacente",
+      "Desmozomii sunt joncțiuni strânse situate între membranele celulei musculare netede adiacente",
       "Intre celule se pot găsi joncțiuni aderențiale",
       "Între celule se pot găsi joncțiuni strânse și de tip „gap”"
     ],
@@ -256,12 +256,12 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_22",
-    "text": "Care dintre următoarele afirmații referitoare la membrana bazală sunt adevărate!",
+    "text": "Care dintre următoarele afirmații referitoare la membrana bazală sunt adevărate?",
     "raspunsuri": [
-      "Prin intermediul i, țesutul epitelial este ancorat de țesutul conjunctiv subiacent",
+      "Prin intermediul ei, țesutul epitelial este ancorat de țesutul conjunctiv subiacent",
       "Conține molecule glicoproteice care pot fi secretate de celulele epiteliale",
       "Este alcătuită dintr-un material glicoproteic intracelular, aparținând celulelor epiteliale supraiacente",
-      "O componentă a membranei bazale este reprezentată de o rețea de fibre de colagen, aparținând țesutului: conjunctiv",
+      "O componentă a membranei bazale este reprezentată de o rețea de fibre de colagen, aparținând țesutului conjunctiv",
       "Se află în interiorul celulelor epiteliale, având rolul de a separa nucleul de citoplasmă"
     ],
     "corect": [0, 1, 3]
@@ -316,7 +316,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_27",
-    "text": "Care dintre următoarele tipuri de țesuturi epiteliale sunt alcătuite din celule dispuse m DOP într-un singur strat?",
+    "text": "Care dintre următoarele tipuri de țesuturi epiteliale sunt alcătuite din celule dispuse într-un singur strat?",
     "raspunsuri": [
       "Epiteliul care căptușește vasele de sânge (endoteliul)",
       "Uroteliul (epiteliu tranzițional)",
@@ -645,7 +645,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Sunt formate dintr-un epiteliu și țesut conjunctiv subiacent",
       "În funcție de fluidul care le umectează, se descriu membrane mucoase și membrane seroase",
       "În aponevroze, tendoane și ligamente, membranele au o structură epitelială ordonată",
-      "Membranele mucoase au de obicei trei straturi (epiteliu, lamina propria, musculara mucoasei)",
+      "Membranele mucoase au de obicei trei straturi (epiteliu, lamina propria, musculara mucoase1)",
       "Membranele seroase (pleura, pericardul și peritoneul) sunt lubrifiate și permit mișcări fără fricțiune"
     ],
     "corect": [2]
@@ -825,7 +825,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Cartilaj hialin — prezent la nivelul epiglotei, simfizei pubiene, traheei și bronhiilor",
       "Cartilaj elastic — prezent în epiglotă, trompa lui Eustachio",
       "Cartilaj fibros — prezent la nivelul simfizei pubiene și al discurilor intervertebrale",
-      "Cartilaj halin — prezent în nas, laringe, ureche externă",
+      "Cartilaj hialin — prezent în nas, laringe, ureche externă",
       "Cartilaj elastic — prezent în epiglotă, suturile craniene"
     ],
     "corect": [1, 2, 3]
@@ -1572,7 +1572,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Stratul granulos, care conține cheratohialinul",
       "Stratul bazal, denumit și germinativ, situat profund, pe membrana bazală"
     ],
-    "corect": [3]
+    "corect": [4]
   },
   {
     "id": "cap2_132",
@@ -1822,7 +1822,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Stratul lucid al epidermului este prezent doar la nivelul pielii groase (palme, tălpi)",
       "Glandele ceruminoase sunt glande eccrine, localizate în canalul auditiv",
       "Glandele sudoripare eccrine sunt răspândite pe toată suprafața corpului și produc sudoarea",
-      "Firele de păr mai groase care apar la pubertate în zona axilară și cea pubiană sunt denumi!€ pilozitate temporară (sau lanugo)"
+      "Firele de păr mai groase care apar la pubertate în zona axilară și cea pubiană sunt denumite pilozitate temporară (sau lanugo)"
     ],
     "corect": [0, 3]
   },
@@ -1896,7 +1896,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Se găsește în epiderm, stratul superficial al pielii",
       "Conține în interior rădăcina firului de păr, înconjurată de teci radiculare"
     ],
-    "corect": [1, 2, 3]
+    "corect": [1, 2, 4]
   },
   {
     "id": "cap2_159",
@@ -1952,7 +1952,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Firul de păr — proliferarea celulelor conjunctive din papila dermică",
       "Firul de păr — proliferarea celulelor bazale din bulb",
-      "Axul firului de păr — celule din stratul bazal al epidermului, care se cheratinizează și mor",
+      "Axul firului de păr — celule din stratul bazal al epidermului, care se cheratinizează și MOI",
       "Papila de la baza foliculului pilos — țesut conjunctiv, vase de sânge și nervi",
       "Axul firului de păr — celule dermice care mor"
     ],
@@ -2218,7 +2218,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Stratul lucid, situat sub cel cornos, aparține epidermului de pe toată suprafața corpului. El conține cheratină care se va transforma în eleidină",
       "Nu sunt straturi ale epidermului stratul papilar și stratul reticular. Acestea aparțin dermului",
       "Stratul bazal al epidermului se mai numește și strat germinativ. El conține un singur rând de celule cubice sau cilindrice",
-      "Foliculii piloși au atașați mușchi denumiți erectori ai firului de păr. Aceștia sunt mușchi! netezi multiunitari, aflați sub control involuntar"
+      "Foliculii piloși au atașați mușchi denumiți erectori ai firului de păr. Aceștia sunt mușchi netezi multiunitari, aflați sub control involuntar"
     ],
     "corect": [2, 3, 4]
   },
@@ -2241,7 +2241,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Melanina protejează pielea împotriva radiațiilor infraroșii, dar nu și împotriva celor ultraviolete",
       "Celulele noi ale firului de păr sunt produse în stratul cornos al epidermului din bulbul folicului pilos",
       "Unghia este alcătuită dintr-o placă de cheratină, dispusă pe un pat unghial vascularizat",
-      "Substanța transparentă, apare intermediar în procesul de transformare cheratohialinului în cheratină, este eleidina",
+      "Substanța transparentă, aparută intermediar în procesul de transformare a cheratohialinului în cheratină, este eleidina",
       "Stratul cornos se îngroașă ca reacție la fricțiune prin procesul denumit hipocheratoză"
     ],
     "corect": [0, 1, 4]
