@@ -645,7 +645,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Sunt formate dintr-un epiteliu și țesut conjunctiv subiacent",
       "În funcție de fluidul care le umectează, se descriu membrane mucoase și membrane seroase",
       "În aponevroze, tendoane și ligamente, membranele au o structură epitelială ordonată",
-      "Membranele mucoase au de obicei trei straturi (epiteliu, lamina propria, musculara mucoase1)",
+      "Membranele mucoase au de obicei trei straturi (epiteliu, lamina propria, musculara mucoasei)",
       "Membranele seroase (pleura, pericardul și peritoneul) sunt lubrifiate și permit mișcări fără fricțiune"
     ],
     "corect": [2]
