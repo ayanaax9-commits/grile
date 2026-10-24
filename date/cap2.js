@@ -616,7 +616,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_52",
-    "text": "Selectați asocierile cor localizarea lor:",
+    "text": "Selectați asocierile corecte referitoare la tipurile de glande exocrine pluricelulare si localizarea lor:",
     "raspunsuri": [
       "Acinoase ramificate — mai mulți acini dispuși de-a lungul unui canal — glandele sebacee din piele",
       "Tubulare încolăcite — canal tubular neramificat — glandele salivare sublinguale",
