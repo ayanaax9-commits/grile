@@ -787,9 +787,9 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "text": "Selectați informațiile incorecte referitoare la țesutul conjunctiv elastic:",
     "raspunsuri": [
       "Conține fibre rigide dispuse în aranjamente paralele sau sub formă de rețea",
-      "Este prezent în pereții aortei și ai altor artere de calibru mare poate reveni rapid la forma inițială",
+      "Este prezent în pereții aortei și ai altor artere de calibru mare",
+      "Datorită prezenței elastinei, o substanță de natură lipidică, acest țesut se poate întinde și poate reveni repid la forma inițială",
       "Este o structură acelulară, cu capacitate de întindere, prezentă între vertebrele adiacente",
-      "ȘI în căile aeriene",
       "Face parte din țesuturile conjunctive dense care posedă și capacitate de întindere"
     ],
     "corect": [0, 2, 3, 4]
