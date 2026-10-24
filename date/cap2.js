@@ -700,11 +700,11 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_59",
-    "text": "Alegeți dintre cele de mai jos asocierile corecte care caracterizează diferite tipuri de țesut conjunctiv: donat — localizare la nivelul ligamentelor, tendoanelor și aponevrozelor",
+    "text": "Alegeți dintre cele de mai jos asocierile corecte care caracterizează diferite tipuri de țesut conjunctiv:",
     "raspunsuri": [
-      "Țesut conjunctiv dens or",
+      "Țesut conjunctiv dens ordonat — lozalizare la nivelul ligamentelor, tendoanelor si aponevrozelor",
       "Unitatea structurală de bază a osului compact la adult — reprezentată de osteon (sistem haversian)",
-      "Țesut conjunctiv dens neordonat — oasele, cartilajele și mușchii",
+      "Țesut conjunctiv dens neordonat — contine fascicule paralele de fibre de colagen — acopera oasele, cartilajele și mușchii",
       "Țesut conjunctiv lax — țesut conjunctiv areolar — situat între piele și mușchi și subiacent față de majoritatea epiteliilor",
       "Țesut conjunctiv lax — fibre proteice aferente și eferente secretate de limfocite"
     ],
