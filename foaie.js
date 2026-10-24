@@ -62,7 +62,7 @@
         <p class="muted">${esc(q.capNume)}</p>
         <p><strong>${i + 1}. ${esc(q.text)}</strong></p>
         ${q.opt.map((o, k) =>
-          `<button class="sopt" data-q="${i}" data-k="${k}"><b>${LITERE[k]}.</b> ${esc(o.text)}</button>`
+          `<div class="sopt"><b>${LITERE[k]}.</b> ${esc(o.text)}</div>`
         ).join("")}
       </div>`).join("");
 
@@ -92,14 +92,14 @@
       setTimeout(() => el.classList.remove("flash"), 900);
       return;
     }
-    const b = e.target.closest("[data-k]");
+    const b = e.target.closest(".bubble");
     if (!b) return;
     const i = parseInt(b.dataset.q, 10);
     const k = parseInt(b.dataset.k, 10);
     const s = new Set(test.alegeri[i]);
     s.has(k) ? s.delete(k) : s.add(k);
     test.alegeri[i] = [...s];
-    sec.querySelectorAll(`[data-q="${i}"][data-k]`).forEach(el =>
+    sec.querySelectorAll(`.bubble[data-q="${i}"]`).forEach(el =>
       el.classList.toggle("selected", s.has(parseInt(el.dataset.k, 10))));
     updateCount();
   });
