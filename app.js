@@ -44,6 +44,8 @@ DATE.capitole.forEach(c => c.intrebari.forEach((q, idx) => {
   dupaId[q.id] = item;
 }));
 const numeCap = Object.fromEntries(DATE.capitole.map(c => [c.id, c.nume]));
+const ordineIndex = Object.fromEntries(DATE.capitole.map((c, i) => [c.id, i]));
+const cmpIndex = (a, b) => (ordineIndex[a.cap] - ordineIndex[b.cap]) || (a.nr - b.nr);
 const textCorecte = (q) => q.corecte.map(i => q.raspunsuri[i]).join(", ");
 // Punctaj între 0 și 1:
 //  - dacă ai ales vreun răspuns greșit => 0
@@ -284,7 +286,10 @@ function renderTests() {
     const p = Math.round(puncte / rows.length * 100);
     const data = new Date(Number(ts)).toLocaleString("ro-RO");
     const caps = [...new Set(rows.map(r => numeCap[r.cap] || r.cap))].join(", ");
-    const intrebari = rows.map(r => {
+    const intrebari = [...rows]
+    .filter(r => dupaId[r.qid])
+    .sort((a, b) => cmpIndex(dupaId[a.qid], dupaId[b.qid]))
+    .map(r => {
       const q = dupaId[r.qid];
       if (!q) return "";
       const sc = r.scor ?? (r.ok ? 1 : 0);
