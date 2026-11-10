@@ -796,7 +796,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
   },
   {
     "id": "cap1_67",
-    "text": "Alegeți afirmațiile adevărate dintre cele de mai jos: m 5 ia",
+    "text": "Alegeți afirmațiile adevărate dintre cele de mai jos:",
     "raspunsuri": [
       "Fagocitoza reprezintă transportul materialului solid prin endocitoză",
       "Pinocitoza reprezintă transportul unor picături de lichid prin exocitoză",
@@ -1180,7 +1180,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
   },
   {
     "id": "cap1_99",
-    "text": "Selectați afirmațiile false referitoare la mitocondrii: mi Do",
+    "text": "Selectați afirmațiile false referitoare la mitocondrii:",
     "raspunsuri": [
       "Pentru desfășurarea respirației celulare, mitocondriile utilizează oxigenul provenit din aerul inspirat",
       "Energia rezultată din catabolismul diferitelor substraturi la nivel mitocondrial este utilizată pentru formarea de molecule de ATP (adenozin-trifosfat)",
@@ -1282,7 +1282,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "Când pe reticulul endoplasmatic sunt prezenți ribozomi, reticulul endoplasmatic se numește rugos",
       "Înainte de a fi transportate spre destinațiile finale, proteinele și lipidele sunt procesate într-un organit celular numit nucleozom",
       "Organitele care eliberează energia celulară din molecule de proveniență alimentară și în care se produc moleculele de ATP (adenozin-trifosfat) sunt mitocondriile",
-      "Principalele componente citoscheletului filamentele intermediare, microfilamentele și microtubulii"
+      "Principalele componente ale citoscheletului sunt filamentele intermediare, microfilamentele și microtubulii"
     ],
     "corect": [1, 3, 4]
   },

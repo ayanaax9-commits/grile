@@ -1240,13 +1240,13 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_104",
-    "text": "Citiți cele 5 afirmații numerotate cu cifre de la 1 la 5. Alegeți literele corespunzătoare astfel: A dacă sunt adevărate afirmațiile 1, 2 și 3, B dacă sunt adevărate afirmațiile 1, 3 și 5, C dacă sunt false afirmațiile 2 și 4, D dacă 1 este adevărată și 2 falsă, E dacă 1 și 5 sunt adevărate și 3 este falsă:",
+    "text": "Citiți cele 5 afirmații numerotate cu cifre de la 1 la 5. 1.Mucusul este un material vâscos, secretat de celulele caliciforme din epiteliul simplu cilindric al tractului digestiv/ 2. Mucoasele acoperă suprafața exterioară a viscerelor și sunt reprezentate de către foițele viscerale ale pleurei, pericardului și peritoneului/ 3.La o glandă merocrină, secreția difuzează în afara celulelor, acestea rămânând intacte în timpul secreției/ 4.Epiteliul stratificat pavimentos se regăsește în endoteliul vaselor de sânge și al vaselor limfatice/ 5.Epiteliul specializat pentru funcția secretorie se mai numește și epiteliu glandular/ Alegeți literele corespunzătoare astfel: A dacă sunt adevărate afirmațiile 1, 2 și 3, B dacă sunt adevărate afirmațiile 1, 3 și 5, C dacă sunt false afirmațiile 2 și 4, D dacă 1 este adevărată și 2 falsă, E dacă 1 și 5 sunt adevărate și 3 este falsă:",
     "raspunsuri": [
-      "Mucusul este un material vâscos, secretat de celulele caliciforme din epiteliul simplu cilindric al tractului digestiv",
-      "Mucoasele acoperă suprafața exterioară a viscerelor și sunt reprezentate de către foițele viscerale ale pleurei, pericardului și peritoneului",
-      "La o glandă merocrină, secreția difuzează în afara celulelor, acestea rămânând intacte în timpul secreției",
-      "Epiteliul stratificat pavimentos se regăsește în endoteliul vaselor de sânge și al vaselor limfatice",
-      "Epiteliul specializat pentru funcția secretorie se mai numește și epiteliu glandular"
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
     ],
     "corect": [1, 2, 3]
   },
@@ -1569,10 +1569,11 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Stratul cornos, în care au loc diviziuni celulare",
       "Stratul spinos, ai cărui „spini” sunt de fapt punctele în care celulele aderă între ele prin intermediul desmozomilor",
       "Stratul bazal, format din mai multe rânduri de celule pavimentoase care nu se divid",
+      "Stratul bazal, denumit și germinativ, situat profund, pe membrana bazală",
       "Stratul granulos, care conține cheratohialinul",
-      "Stratul bazal, denumit și germinativ, situat profund, pe membrana bazală"
+      
     ],
-    "corect": [4]
+    "corect": [3]
   },
   {
     "id": "cap2_132",
@@ -1893,10 +1894,11 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Este alcătuit din celule dermice",
       "Este alcătuit dintr-o grupare de celule epidermice care se extind în derm, formând o structură tubulară de mici dimensiuni",
       "La baza lui se află bulbul, o porțiune mai dilatată",
+      "Conține în interior rădăcina firului de păr, înconjurată de teci radiculare",
       "Se găsește în epiderm, stratul superficial al pielii",
-      "Conține în interior rădăcina firului de păr, înconjurată de teci radiculare"
+      
     ],
-    "corect": [1, 2, 4]
+    "corect": [1, 2, 3]
   },
   {
     "id": "cap2_159",
