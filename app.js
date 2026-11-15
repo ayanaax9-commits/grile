@@ -1,6 +1,7 @@
 // ---------- Utilitare ----------
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const LITERE = ["A", "B", "C", "D", "E", "F"];
 
 // ordine = indecșii originali ai variantelor, în ordinea în care se afișează
 // alese = indecșii originali bifați de tine (sau undefined dacă nu se știu)
@@ -223,7 +224,7 @@ function finish() {
     const alese = test.alegeri[idx].map(k => q.opt[k]);
     const p = scor(q, test.alegeri[idx]);
     const ok = p === 1;
-    istoric.push({ qid: q.id, cap: q.cap, ok, scor: p, ts, alese: alese.map(o => o.i) });
+    istoric.push({ qid: q.id, cap: q.cap, ok, scor: p, ts, alese: alese.map(o => o.i), ordine: q.opt.map(o => o.i) });
     return { q, alese, ok, p };
   });
   save(KEY_ISTORIC, istoric);
@@ -273,6 +274,229 @@ function bindComments() {
 
 $("again").onclick = () => { renderSetup(); show("setup"); };
 
+// rezumat pe capitole: "Cap 3: 1->5 x2; 6->100; 121, 155, 167"
+function resumatLinii(rows) {
+  const perCap = {};
+  rows.forEach(r => {
+    const q = dupaId[r.qid];
+    if (!q) return;
+    const m = (perCap[q.cap] ??= {});
+    m[q.nr] = (m[q.nr] || 0) + 1;
+  });
+  return Object.keys(perCap)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .map(cap => {
+      const m = perCap[cap];
+      const nrs = Object.keys(m).map(Number).sort((a, b) => a - b);
+      const intervale = [], singure = {};
+      let i = 0;
+      while (i < nrs.length) {
+        let j = i;
+        while (j + 1 < nrs.length && nrs[j + 1] === nrs[j] + 1 && m[nrs[j + 1]] === m[nrs[i]]) j++;
+        const c = m[nrs[i]];
+        if (j > i) intervale.push(`${nrs[i]}->${nrs[j]}${c > 1 ? ` x${c}` : ""}`);
+        else (singure[c] ??= []).push(nrs[i]);
+        i = j + 1;
+      }
+      const sing = Object.entries(singure).map(([c, l]) => l.join(", ") + (c > 1 ? ` x${c}` : ""));
+      return `${cap.replace("cap", "Cap ")}: ${[...intervale, ...sing].join("; ")}`;
+    });
+}
+
+function resumatHTML(rows) {
+  return `<h3>Grile făcute</h3><div class="resumat">${resumatLinii(rows).map(esc).join("<br>")}</div>`;
+}
+
+// foaia (numere + litere + semn) pentru o listă de încercări
+function foaieHTML(rows, numerotare) {
+  return rows.map((r, k) => {
+    const q = dupaId[r.qid];
+    const sc = r.scor ?? (r.ok ? 1 : 0);
+    const semn = sc === 1 ? "✓" : sc > 0 ? "½" : "✗";
+    const cls = sc === 1 ? "ok" : sc > 0 ? "partial" : "bad";
+    const eticheta = numerotare === "grila"
+      ? `<span class="fnr">${q.nr}.</span>`
+      : `<span class="fnr">${k + 1}.</span><span class="fq">${esc(q.cap.replace("cap", "C"))}·${q.nr}</span>`;
+    return `<div class="frow">${eticheta}
+      <span class="fl">${literePentruHTML(r)}</span>
+      <span class="fm ${cls}">${semn}</span></div>`;
+  }).join("");
+}
+
+// doar întrebările greșite (total sau parțial), desfășurabile
+function greseliHTML(rows) {
+  const coment = load(KEY_COMENT, {});
+  const gresite = rows.filter(r => (r.scor ?? (r.ok ? 1 : 0)) < 1);
+  if (!gresite.length) return `<p class="ok">Nicio greșeală.</p>`;
+  return gresite.map(r => {
+    const q = dupaId[r.qid];
+    const sc = r.scor ?? (r.ok ? 1 : 0);
+    const cls = sc > 0 ? "partial" : "bad";
+    const semn = sc > 0 ? "½" : "✗";
+    const txt = sc > 0 ? `Parțial (${fmt(sc)} din 1)` : "Greșit";
+    return `<details class="qd">
+      <summary>
+        <span class="qn">${esc(q.cap.replace("cap", "C"))}·${q.nr}</span>
+        <span class="qt">${esc(q.text)}</span>
+        <span class="qs ${cls}">${semn}</span>
+      </summary>
+      <p class="muted">${esc(q.capNume)}</p>
+      ${reviewHTML(q, r.ordine || q.raspunsuri.map((_, i) => i), r.alese)}
+      <p class="${cls}">${txt}</p>
+      <textarea data-qid="${esc(q.id)}" placeholder="Comentariu">${esc(coment[q.id] || "")}</textarea>
+    </details>`;
+  }).join("");
+}
+
+// teste bifate pentru foaia combinată (ts-ul testului, ca text)
+const testeBifate = new Set();
+
+// rândurile unui test, sortate ca în foaie
+function randuriTest(ts) {
+  return load(KEY_ISTORIC, [])
+    .filter(r => String(r.ts) === String(ts) && dupaId[r.qid])
+    .sort((a, b) => cmpIndex(dupaId[a.qid], dupaId[b.qid]));
+}
+
+// generează foaia ca imagine PNG și o descarcă direct (fără biblioteci)
+function printFoaie(titlu, rows, numerotare) {
+  const COLS = 3, W = 1020, M = 30, CW = (W - 2 * M) / COLS, RH = 30, S = 2;
+  const FONT = "system-ui, 'Segoe UI', sans-serif";
+
+  // rezumatul, împărțit pe rânduri dacă e prea lung
+  const mc = document.createElement("canvas").getContext("2d");
+  mc.font = `bold 15px ${FONT}`;
+  const linii = [];
+  resumatLinii(rows).forEach(t => {
+    let cur = "";
+    t.split(" ").forEach(w => {
+      const test = cur ? cur + " " + w : w;
+      if (cur && mc.measureText(test).width > W - 2 * M) { linii.push(cur); cur = "    " + w; }
+      else cur = test;
+    });
+    linii.push(cur);
+  });
+
+  const TOP = 94 + linii.length * 22 + 8;
+  const per = Math.ceil(rows.length / COLS);
+  const H = TOP + per * RH + M;
+
+  const c = document.createElement("canvas");
+  c.width = W * S; c.height = H * S;
+  const g = c.getContext("2d");
+  g.scale(S, S);
+  g.fillStyle = "#fff"; g.fillRect(0, 0, W, H);
+
+  const puncte = rows.reduce((s, r) => s + (r.scor ?? (r.ok ? 1 : 0)), 0);
+  const p = Math.round(puncte / rows.length * 100);
+
+  g.fillStyle = "#000"; g.font = `bold 22px ${FONT}`;
+  g.fillText(titlu, M, 38);
+  g.font = `16px ${FONT}`;
+  g.fillText(`${fmt(puncte)} / ${rows.length} puncte (${p}%)`, M, 66);
+  g.font = `bold 15px ${FONT}`;
+  linii.forEach((t, i) => g.fillText(t, M, 94 + i * 22));
+
+  rows.forEach((r, k) => {
+    const q = dupaId[r.qid];
+    const col = Math.floor(k / per), i = k % per;
+    const x0 = M + col * CW, y = TOP + i * RH + 20;
+    const sc = r.scor ?? (r.ok ? 1 : 0);
+
+    // numărul
+    g.font = `15px ${FONT}`; g.fillStyle = "#666";
+    g.fillText(numerotare === "grila" ? `${q.nr}.` : `${k + 1}. ${q.cap.replace("cap", "C")}·${q.nr}`, x0, y);
+
+    // literele
+    let x = x0 + (numerotare === "grila" ? 42 : 105);
+    const ord = r.ordine || q.raspunsuri.map((_, idx) => idx);
+    const alese = r.alese || [];
+    const parti = [];
+    ord.forEach((idx, kk) => {
+      const corect = q.corecte.includes(idx), ales = alese.includes(idx);
+      if (ales && corect) parti.push({ t: LITERE[kk], tip: "ok" });
+      else if (ales) parti.push({ t: LITERE[kk], tip: "bad" });
+      else if (corect) parti.push({ t: LITERE[kk], tip: "miss" });
+    });
+    if (!parti.length) parti.push({ t: "—", tip: "ok" });
+
+    parti.forEach((pt, j) => {
+      if (pt.tip === "bad") { g.font = `bold 17px ${FONT}`; g.fillStyle = "#b3261e"; }
+      else if (pt.tip === "miss") { g.font = `italic 17px ${FONT}`; g.fillStyle = "#000"; }
+      else { g.font = `17px ${FONT}`; g.fillStyle = "#000"; }
+      g.fillText(pt.t, x, y);
+      const w = g.measureText(pt.t).width;
+      if (pt.tip === "miss") {
+        g.strokeStyle = "#000"; g.lineWidth = 1; g.setLineDash([2, 2]);
+        g.beginPath(); g.moveTo(x, y + 3); g.lineTo(x + w, y + 3); g.stroke();
+        g.setLineDash([]);
+      }
+      x += w;
+      if (j < parti.length - 1) {
+        g.font = `17px ${FONT}`; g.fillStyle = "#000";
+        g.fillText(", ", x, y);
+        x += g.measureText(", ").width;
+      }
+    });
+
+    // verdict
+    g.font = `bold 18px ${FONT}`; g.textAlign = "right";
+    if (sc === 1) { g.fillStyle = "#1f7a3d"; g.fillText("✓", x0 + CW - 16, y); }
+    else if (sc > 0) { g.fillStyle = "#8a5200"; g.fillText("½", x0 + CW - 16, y); }
+    else { g.fillStyle = "#b3261e"; g.fillText("✗", x0 + CW - 16, y); }
+    g.textAlign = "left";
+
+    // linie sub rând
+    g.strokeStyle = "#ddd"; g.lineWidth = 1;
+    g.beginPath(); g.moveTo(x0, y + 7); g.lineTo(x0 + CW - 14, y + 7); g.stroke();
+  });
+
+  c.toBlob(blob => {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    const nume = titlu.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\-]+/g, "_").replace(/^_+|_+$/g, "");
+    a.download = (nume || "foaie") + ".png";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+}
+
+function renderCombinat() {
+  const box = $("stats-combined");
+  if (!testeBifate.size) {
+    box.innerHTML = `<p class="muted">Bifează unul sau mai multe teste de mai jos ca să vezi foaia lor combinată.</p>`;
+    return;
+  }
+  const istoric = load(KEY_ISTORIC, []);
+  const tsuri = [...testeBifate].sort((a, b) => Number(a) - Number(b));
+
+  const rows = [];
+  tsuri.forEach(ts => {
+    istoric
+      .filter(r => String(r.ts) === ts && dupaId[r.qid])
+      .sort((a, b) => cmpIndex(dupaId[a.qid], dupaId[b.qid]))
+      .forEach(r => rows.push(r));
+  });
+
+  const puncte = rows.reduce((s, r) => s + (r.scor ?? (r.ok ? 1 : 0)), 0);
+  const p = Math.round(puncte / rows.length * 100);
+
+  box.innerHTML = `
+    <div class="card">
+      <p><strong>${tsuri.length} teste bifate · ${fmt(puncte)} / ${rows.length} (${p}%)</strong></p>
+      ${resumatHTML(rows)}
+      <h3>Foaie de răspuns</h3>
+      <button id="pdf-combinat">Exportă foaia</button>
+      <div class="foaie-stat">${foaieHTML(rows, "secventa")}</div>
+      <h3>Întrebări greșite</h3>
+      <p class="muted">Apasă pe o întrebare ca să vezi variantele.</p>
+      ${greseliHTML(rows)}
+    </div>`;
+    $("pdf-combinat").onclick = () =>
+    printFoaie(`Foaie de răspuns · ${tsuri.length} teste`, rows, "secventa");
+  bindComments();
+}
+
 // statisticile pe teste
 function renderTests() {
   const istoric = load(KEY_ISTORIC, []);
@@ -286,29 +510,55 @@ function renderTests() {
     const p = Math.round(puncte / rows.length * 100);
     const data = new Date(Number(ts)).toLocaleString("ro-RO");
     const caps = [...new Set(rows.map(r => numeCap[r.cap] || r.cap))].join(", ");
-    const intrebari = [...rows]
-    .filter(r => dupaId[r.qid])
-    .sort((a, b) => cmpIndex(dupaId[a.qid], dupaId[b.qid]))
-    .map(r => {
-      const q = dupaId[r.qid];
-      if (!q) return "";
-      const sc = r.scor ?? (r.ok ? 1 : 0);
-      const cls = sc === 1 ? "ok" : sc > 0 ? "partial" : "bad";
-      return `<div class="card">
-        <p class="muted">${esc(q.capNume)} · grila nr. ${q.nr}</p>
-        <p class="${cls}"><strong>${esc(q.text)}</strong></p>
-        ${reviewHTML(q, q.raspunsuri.map((_, i) => i), r.alese)}
-        <p class="${cls}">${sc === 1 ? "Corect" : sc > 0 ? `Parțial: ${fmt(sc)} din 1` : "Greșit"}</p>
-        <textarea data-qid="${esc(q.id)}" placeholder="Comentariu">${esc(coment[q.id] || "")}</textarea>
-      </div>`;
-    }).join("");
+        const sortate = [...rows]
+      .filter(r => dupaId[r.qid])
+      .sort((a, b) => cmpIndex(dupaId[a.qid], dupaId[b.qid]));
+
+    const foaie = foaieHTML(sortate, "grila");
+    const intrebari = greseliHTML(sortate);
+
     return `<details class="card">
-      <summary>Test ${teste.length - n} · ${esc(data)} · ${fmt(puncte)} / ${rows.length} (${p}%)</summary>
+      <summary><input type="checkbox" class="test-check" data-ts="${ts}" ${testeBifate.has(ts) ? "checked" : ""}> Test ${teste.length - n} · ${esc(data)} · ${fmt(puncte)} / ${rows.length} (${p}%)</summary>
       <p class="muted">${esc(caps)}</p>
+      ${resumatHTML(sortate)}
+      <h3>Foaie de răspuns</h3>
+      <button class="pdf-test" data-ts="${ts}">Exportă foaia</button>
+      <div class="foaie-stat">${foaie}</div>
+      <h3>Întrebări greșite</h3>
       ${intrebari}
     </details>`;
   }).join("") : `<p class="muted">Niciun test încă.</p>`;
   bindComments();
+    document.querySelectorAll(".test-check").forEach(c => {
+    c.onclick = (e) => e.stopPropagation(); // să nu desfacă/închidă testul
+    c.onchange = () => {
+      c.checked ? testeBifate.add(c.dataset.ts) : testeBifate.delete(c.dataset.ts);
+      renderCombinat();
+    };
+  });
+    document.querySelectorAll(".pdf-test").forEach(b => {
+    b.onclick = () => {
+      const rows = randuriTest(b.dataset.ts);
+      printFoaie("Foaie de răspuns · " + new Date(Number(b.dataset.ts)).toLocaleString("ro-RO"), rows, "grila");
+    };
+  });
+  renderCombinat();
+}
+
+// litere colorate: normal = bifat corect, roșu = bifat greșit, italic punctat = corect dar nebifat
+function literePentruHTML(r) {
+  const q = dupaId[r.qid];
+  if (!q || !r.alese) return "—";
+  const ord = r.ordine || q.raspunsuri.map((_, i) => i);
+  const parts = [];
+  ord.forEach((i, k) => {
+    const corect = q.corecte.includes(i);
+    const ales = r.alese.includes(i);
+    if (ales && corect) parts.push(`<span class="lt">${LITERE[k]}</span>`);
+    else if (ales) parts.push(`<span class="lt lt-bad">${LITERE[k]}</span>`);
+    else if (corect) parts.push(`<span class="lt lt-miss">${LITERE[k]}</span>`);
+  });
+  return parts.length ? parts.join(", ") : "—";
 }
 
 // ---------- 4. Statistici ----------
@@ -317,18 +567,13 @@ function renderStats() {
   const istoric = load(KEY_ISTORIC, []);
   if (!istoric.length) {
     $("stats-chapters").innerHTML = `<p class="muted">Nu ai încă răspunsuri. Începe un test.</p>`;
-    $("stats-wrong").innerHTML = "";
     return;
   }
-  const perCap = {}, perQ = {};
+  const perCap = {};
   istoric.forEach(r => {
     perCap[r.cap] ??= { ok: 0, total: 0 };
     perCap[r.cap].total++;
-    perCap[r.cap].ok += r.scor ?? (r.ok ? 1 : 0); // intrările vechi nu au "scor"
-    perQ[r.qid] ??= { gresit: 0, total: 0 };
-      if (r.alese) perQ[r.qid].ultim = r.alese; // ultima alegere (intrările vechi nu o au)
-    perQ[r.qid].total++;
-    if (!r.ok) perQ[r.qid].gresit++;
+    perCap[r.cap].ok += r.scor ?? (r.ok ? 1 : 0);
   });
 
   $("stats-chapters").innerHTML = Object.entries(perCap).map(([id, s]) => {
@@ -336,22 +581,17 @@ function renderStats() {
     return `<div class="row"><span>${esc(numeCap[id] || id)}</span><span>${fmt(s.ok)} / ${s.total} puncte (${p}%)</span></div>
             <div class="progress small"><div style="width:${p}%"></div></div>`;
   }).join("");
-
-  const coment = load(KEY_COMENT, {});
-  const top = Object.entries(perQ).filter(([, s]) => s.gresit > 0)
-    .sort((a, b) => b[1].gresit - a[1].gresit).slice(0, 20);
-  $("stats-wrong").innerHTML = top.length ? top.map(([id, s]) => {
-    const q = dupaId[id];
-    if (!q) return "";
-    return `<div class="card">
-      <p class="muted">${esc(q.capNume)} · răspuns incomplet sau greșit de ${s.gresit} ori din ${s.total}</p>
-      <p><strong>${esc(q.text)}</strong></p>
-      ${reviewHTML(q, q.raspunsuri.map((_, i) => i), s.ultim)}
-      <textarea data-qid="${esc(id)}" placeholder="Comentariu">${esc(coment[id] || "")}</textarea>
-    </div>`;
-  }).join("") : `<p class="muted">Nicio greșeală... încă.</p>`;
-  bindComments();
 }
+
+$("sel-all").onclick = () => {
+  document.querySelectorAll(".test-check").forEach(c => { c.checked = true; testeBifate.add(c.dataset.ts); });
+  renderCombinat();
+};
+$("sel-none").onclick = () => {
+  document.querySelectorAll(".test-check").forEach(c => { c.checked = false; });
+  testeBifate.clear();
+  renderCombinat();
+};
 
 // ---------- Backup ----------
 $("export").onclick = () => {

@@ -46,3 +46,6 @@ input[type=number] { font: inherit; width: 90px; padding: 8px; border-radius: 8p
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
 .card p { margin: 4px 0; }
 textarea { width: 100%; min-height: 60px; margin-top: 8px; padding: 8px; font: inherit; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--text); resize: vertical; }
+
+.fq { width: 62px; color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.test-check { margin-right: 8px; }
