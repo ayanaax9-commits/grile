@@ -477,7 +477,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Celule plate — epiteliu pavimentos simplu — numit endoteliu la nivelul vaselor de sânge — numit endoteliu la nivelul vaselor limfatice",
       "Celule cubice sau cilindrice — mezoteliu la nivelul cavităților interne — rol de absorbție",
       "Epiteliul rinichiului (tubii uriniferi) — rol în excreția nutrimentelor — rol în secreția hormonilor corticalei suprarenale",
-      "Epiteliu pseudostratificat — pare constituit din mai multe straturi de celule — este Constituit în realitate dintr-un singur rând de celule cu înălțimi diferite",
+      "Epiteliu pseudostratificat — pare constituit din mai multe straturi de celule — este constituit în realitate dintr-un singur rând de celule cu înălțimi diferite",
       "Epiteliu pseudostratificat — celule cilindrice — căptușește traheea și arborele bronșic superior — toate celulele vin în contact cu membrana bazală"
     ],
     "corect": [0, 3, 4]
@@ -1077,7 +1077,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Este prezent în peretele inimii, având celule care prezintă striații",
       "Fiind țesut muscular striat, se află sub control voluntar",
       "Celulele (fibrele) musculare care îl compun sunt ramificate și pot comunica prin intermediul unor joncțiuni specializate numite joncțiuni de tip „gap”",
-      "Celulele (fibrele) musculare componente pot comunica prin intermediul unor Joncțiuni specializate numite joncțiuni strânse",
+      "Celulele (fibrele) musculare componente pot comunica prin intermediul unor joncțiuni specializate numite joncțiuni strânse",
       "Prezintă ca elemente specifice discurile intercalare care unesc între ele celulele"
     ],
     "corect": [0, 2, 4]
@@ -2276,7 +2276,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "id": "cap2_190",
     "text": "Alegeți dintre cele de mai jos, răspunsurile cu ambele afirmații adevărate:",
     "raspunsuri": [
-      "Căldura se pierde la suprafața corpului prin transpirație în urma procesului de evaporare, Configurația liniei dintre epiderm și derm este ondulată",
+      "Căldura se pierde la suprafața corpului prin transpirație în urma procesului de evaporare. Configurația liniei dintre epiderm și derm este ondulată",
       "Sistemul tegumentar absoarbe vitaminele hidrosolubile aplicate pe piele. Sinteza vitaminei D se realizează integral la nivel cutanat și reprezintă funcția de termoreglare a pielii",
       "Cheratina din stratul extern al epidermului constituie o barieră împotriva substanțelor hidrosolubile. Celulele din stratul bazal al epidermului primesc substanțe nutritive prin intermediul vaselor sanguine din derm",
       "În derm se găsesc foliculi piloși, glande sebacee, fibre musculare, receptori senzitivi și numeroase vase sanguine. În stratul cel mai profund al epidermului, au loc diviziuni celulare care permit înlocuirea celulelor îmbătrânite",

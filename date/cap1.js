@@ -226,7 +226,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "Organismul nu se află în homeostazie atunci când nevoile celulelor sale sunt satisfăcute. Toate sistemele de organe sunt implicate în menținerea homeostaziei",
       "Menținerea homeostaziei se realizează prin mecanismele de feed-back, prin care organismul trimite informații înapoi la sistem, pentru a induce un răspuns. Expulzia fetală și a placentei reprezintă un exemplu de feed-back negativ",
       "În menținerea homeostaziei este implicat doar sistemul nervos. În homeostazie, parametrii mediului intern al organismului sunt menținuți în limitele normale, chiar dacă mediul înconjurător se modifică",
-      "Diferite afecțiuni (boli), căldura excesivă, durerea sau absența oxigenului din sânge determină dezechilibre ale mediului. intern al organismului. Valoarea de referință a unui mecanism de feed-back este reprezentată de dublul valorii normale a unui factor variabil"
+      "Diferite afecțiuni (boli), căldura excesivă, durerea sau absența oxigenului din sânge determină dezechilibre ale mediului intern al organismului. Valoarea de referință a unui mecanism de feed-back este reprezentată de dublul valorii normale a unui factor variabil"
     ],
     "corect": [0, 2, 4]
   },
@@ -271,8 +271,8 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Alegeți succesiunile de afirmații adevărate dintre cele enumerate mai jos:",
     "raspunsuri": [
       "În poziție anatomică, palmele sunt orientate spre lateral. Termenul direcțional folosit pentru a descrie partea din față a corpului, de aceeași parte cu abdomenul, este „posterior”",
-      "Termenul „ipsilateral” se referă la structuri aflate de aceeași parte a corpului. Termenul superior” definește poziția direcționată spre cap (cranială)",
-      "În locul termenului „Superior se utilizează frecvent „cervical” sau „cranial”. Oprirea unei hemoragii implică un mecanism de feed-back negativ, la fel cu expulzia placentei ulterior expulziei fetale",
+      "Termenul „ipsilateral” se referă la structuri aflate de aceeași parte a corpului. Termenul „superior” definește poziția direcționată spre cap (cranială)",
+      "În locul termenului „superior” se utilizează frecvent „cervical” sau „cranial”. Oprirea unei hemoragii implică un mecanism de feed-back negativ, la fel cu expulzia placentei ulterior expulziei fetale",
       "Termenul „posterior” se referă la partea din spate a corpului, acest termen poate fi înlocuit cu „dorsal”. Supradiafragmatic, în mediastin, esofagul este situat posterior față de trahee",
       "Termenul „caudal” — alternativă pentru termenul „inferior”, este utilizat și în anatomia umană. Segmentele colonului pot fi descrise ca „ipsilaterale” dacă ne referim la colonul descendent și colonul sigmoid sau „controlaterale” dacă ne referim la colonul ascendent și colonul descendent"
     ],
@@ -739,7 +739,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Membrana plasmatică este o membrană semipermeabilă care:",
     "raspunsuri": [
       "Permite trecerea apei dintr-o regiune cu o concentrație mică a solvitului într-una cu o concentrație mare a acestuia",
-      "Lasă să treacă doar anumite molecule (spre exemplu, O», apă, CO>)",
+      "Lasă să treacă doar anumite molecule (spre exemplu, O2, apă, CO2)",
       "Conține proteine denumite histone, care funcționează ca pompe ionice membranare",
       "Reprezintă împreună cu ribozomii sediul sintezei proteinelor transmembranare",
       "Nu permite trecerea cu ușurință a moleculelor mari înspre sau dinspre celulă"
@@ -814,7 +814,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "Dacă se vor introduce hematii într-o soluție hipertonă, acestea vor suferi procesul de hemoliză",
       "Membrana plasmatică semipermeabilă permite trecerea cu ușurință a unor molecule de dimensiuni mici",
       "Transportul activ se realizează în sensul gradientului de concentrație (de la concentrație mare la concentrație mică)",
-      "Pentru desfășurarea transportului activ transmembranar, energia se poate obține prin des-facerea unui compus care conține legături fosfat cu potențial energetic ridicat (adenozin-trifosfat)"
+      "Pentru desfășurarea transportului activ transmembranar, energia se poate obține prin desfacerea unui compus care conține legături fosfat cu potențial energetic ridicat (adenozin-trifosfat)"
     ],
     "corect": [0, 1, 3]
   },
@@ -826,7 +826,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "Ingestia bacteriilor de către leucocite se realizează prin endocitoză",
       "Ingestia bacteriilor de către leucocite se realizează prin exocitoză",
       "Difuziunea facilitată se realizează cu ajutorul proteinelor transportoare transmembranare",
-      "Transportul activ presupune trecerea moleculelor/ionilor din zone cu concentrație mică în zone cu concentrație mare, cu ajutorul proteinei transportoare și a energiei furnizate de"
+      "Transportul activ presupune trecerea moleculelor/ionilor din zone cu concentrație mică în zone cu concentrație mare, cu ajutorul proteinei transportoare și a energiei furnizate de ATP"
     ],
     "corect": [1, 3, 4]
   },
@@ -834,7 +834,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "id": "cap1_70",
     "text": "Selectați afirmațiile adevărate cu privire la transportul activ prin membrana plasmatică:",
     "raspunsuri": [
-      "Se realizează împotriva gradientului de concentrație, cu energic furnizată prin desfacerea (hidroliza) adenozin-trifosfatului",
+      "Se realizează împotriva gradientului de concentrație, cu energie furnizată prin desfacerea (hidroliza) adenozin-trifosfatului",
       "Rata transportului activ este limitată de numărul proteinelor transportoare",
       "Se realizează cu ajutorul proteinelor transmembranare, împotriva gradientului de concentrație",
       "Nu necesită energie din desfacerea (hidroliza) adenozin-trifosfatului",
@@ -968,7 +968,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "raspunsuri": [
       "Există aproximativ 30.000 de gene în nucleul fiecărei celule umane",
       "Învelișul nuclear constă din două straturi de proteine cu pori prin care mediul intern al nucleului comunică cu citoplasma",
-      "Nucleolul conține acid ribonucleic (ARN) și intervine în ei subunităților ribozomale, care vor fi asamblate în citoplasmă sub formă de ribozomi",
+      "Nucleolul conține acid ribonucleic (ARN) și intervine în producerea subunităților ribozomale, care vor fi asamblate în citoplasmă sub formă de ribozomi",
       "Este înconjurat de o membrană alcătuită din două straturi duble de fosfolipide",
       "Spre deosebire de membrana celulară, membrana nucleară nu este prevăzută cu pori"
     ],
@@ -1483,7 +1483,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Alegeți asocierile corecte referitoare la ciclul celular și la fazele (etapele) sale:",
     "raspunsuri": [
       "Interfaza — replicarea ADN-ului — desfășurarea activităților specifice celulei",
-      "Citokineza -— alinierea cromozomilor la nivelul plăcii metafazice — 92 de cromatide",
+      "Citokineza — alinierea cromozomilor la nivelul plăcii metafazice — 92 de cromatide",
       "Faza G1 — activități normale ale celulei (secreția de substanțe în celula glandulară, contracția în celula musculară)",
       "Ciclul celular — derularea a trei faze distincte — profaza, metafaza și telofaza — finalizare prin meioză",
       "Faza G1 din interfază — sinteză de proteine structurale — creștere dimensională a celulei — cromatină despiralizată"
@@ -1749,7 +1749,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "Cele două cromatide surori sunt unite într-o regiune numită centromer",
       "Nucleolii dispar, iar membrana nucleară se dezasamblează",
       "Centriolii (structuri de dimensiuni microscopice) migrează spre același pol al celulei",
-      "Structurile de dimensiuni microscopice — centriolii — migrează spre polii opuși ai celule;",
+      "Structurile de dimensiuni microscopice — centriolii — migrează spre polii opuși ai celulei",
       "Centriolii situați la polii opuși ai celulei sunt înconjurați de microtubuli radiari, denumiți aster"
     ],
     "corect": [0, 1, 3, 4]
@@ -1976,7 +1976,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "raspunsuri": [
       "Baza azotată uracil și monozaharidul riboză sunt substanțe organice prezente în structura cromozomilor",
       "În alcătuirea cromozomilor se regăsesc proteinele denumite histone și acidul dezoxiribonucleic",
-      "C., Vitamina C este absentă din structura cromozomilor",
+      "Vitamina C este absentă din structura cromozomilor",
       "Prin supraspiralizare, cromozomii vor forma cromatină condensată",
       "Compactarea suplimentară a ADN-ului și formarea cromozomilor condensați se realizează prin supraspiralizarea nucleozomilor"
     ],
