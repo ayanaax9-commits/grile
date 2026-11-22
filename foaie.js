@@ -16,6 +16,7 @@
         <p id="sheet-count" class="muted"></p>
         <div id="sheet-grid"></div>
         <button id="sheet-submit" class="primary">Predă foaia</button>
+        <button id="sheet-pause">⏸ Pauză și salvează</button>
       </aside>
     </div>`;
   main.appendChild(sec);
@@ -44,11 +45,12 @@
       ...q,
       opt: shuffle(q.raspunsuri.map((text, i) => ({ text, i })))
     }));
-    test = {
+        test = {
       intrebari: alese,
       alegeri: alese.map(() => []),
       index: 0,
-      mod: "final"
+      mod: "final",
+      foaie: true
     };
     renderSheet();
     show("sheet");
@@ -103,6 +105,27 @@
       el.classList.toggle("selected", s.has(parseInt(el.dataset.k, 10))));
     updateCount();
   });
+
+    // ---- pauză / reluare ----
+  $("sheet-pause").onclick = () => {
+    if (!test.reluat && load(KEY_IN_CURS, null) &&
+        !confirm("Ai deja un alt test salvat. Îl înlocuiesc cu acesta?")) return;
+    salveazaTest();
+    test = null;
+    renderSetup();
+    show("setup");
+  };
+
+  window.reiaFoaie = () => {
+    renderSheet();
+    test.alegeri.forEach((a, i) => (a || []).forEach(k => {
+      const b = sec.querySelector(`.bubble[data-q="${i}"][data-k="${k}"]`);
+      if (b) b.classList.add("selected");
+    }));
+    updateCount();
+    show("sheet");
+    window.scrollTo(0, 0);
+  };
 
   // ---- predarea ----
   $("sheet-submit").onclick = () => {

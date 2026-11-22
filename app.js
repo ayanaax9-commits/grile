@@ -29,6 +29,7 @@ function shuffle(arr) {
 // ---------- Date salvate în browser ----------
 const KEY_ISTORIC = "grila_istoric";    // [{qid, cap, ok, ts}]
 const KEY_COMENT  = "grila_comentarii"; // {qid: "text"}
+const KEY_IN_CURS = "grila_in_curs";
 function load(key, fallback) {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
 }
@@ -85,8 +86,77 @@ function renderSetup() {
       ${esc(c.nume)} <span class="muted">(${c.intrebari.length} întrebări)</span>
     </label>`).join("");
     document.querySelectorAll("#from, #to").forEach(el => el.oninput = updateAvailable);
+    renderResume();
   updateAvailable();
 }
+
+// ---------- Pauză / continuare ----------
+function renderResume() {
+  const s = load(KEY_IN_CURS, null);
+  const box = $("resume-box");
+  if (!s) { box.innerHTML = ""; return; }
+  const facute = s.alegeri.filter(a => a && a.length).length;
+  box.innerHTML = `
+    <div class="card">
+      <p><strong>Ai un test în pauză</strong></p>
+      <p class="muted">${facute} din ${s.intrebari.length} grile făcute · ${esc(new Date(s.ts).toLocaleString("ro-RO"))}</p>
+      <button id="resume" class="primary">Continuă testul</button>
+      <button id="discard" class="danger">Șterge testul salvat</button>
+    </div>`;
+  $("resume").onclick = reia;
+  $("discard").onclick = () => {
+    if (confirm("Ștergi testul salvat?")) { localStorage.removeItem(KEY_IN_CURS); renderResume(); }
+  };
+}
+
+// returnează true dacă s-a salvat (false dacă testul era de fapt gata și s-a terminat)
+function salveazaTest() {
+  const alegeri = test.alegeri.map(a => a ? [...a] : null);
+  let index = test.index;
+  if (!test.foaie && test.mod === "imediat") {
+    // întrebarea curentă: dacă a fost deja verificată o socotim făcută, altfel o refacem
+    if (test.checked) index++; else alegeri[index] = null;
+  }
+  if (!test.foaie && index >= test.intrebari.length) { finish(); return false; }
+  save(KEY_IN_CURS, {
+    ts: Date.now(),
+    mod: test.mod,
+    foaie: !!test.foaie,
+    index,
+    alegeri,
+    intrebari: test.intrebari.map(q => ({ id: q.id, ordine: q.opt.map(o => o.i) }))
+  });
+  return true;
+}
+
+function reia() {
+  const s = load(KEY_IN_CURS, null);
+  if (!s) return;
+  const intrebari = [], alegeri = [];
+  s.intrebari.forEach((x, k) => {
+    const q = dupaId[x.id];
+    if (!q) return; // întrebare ștearsă între timp
+    intrebari.push({ ...q, opt: x.ordine.map(i => ({ text: q.raspunsuri[i], i })) });
+    alegeri.push(s.alegeri[k]);
+  });
+  if (!intrebari.length) return;
+  test = {
+    intrebari, alegeri,
+    index: Math.min(s.index, intrebari.length - 1),
+    mod: s.mod,
+    foaie: s.foaie,
+    reluat: true
+  };
+  if (s.foaie) return window.reiaFoaie();
+  show("test");
+  renderQuestion();
+}
+
+$("pause").onclick = () => {
+  if (!test.reluat && load(KEY_IN_CURS, null) &&
+      !confirm("Ai deja un alt test salvat. Îl înlocuiesc cu acesta?")) return;
+  if (salveazaTest()) { test = null; renderSetup(); show("setup"); }
+};
 
 function selectedPool() {
   const caps = [...document.querySelectorAll(".cap-check:checked")].map(e => e.value);
@@ -158,6 +228,11 @@ function renderQuestion() {
   $("options").innerHTML = q.opt.map((o, k) =>
     `<button class="option" data-k="${k}">${esc(o.text)}</button>`).join("");
   document.querySelectorAll(".option").forEach(b => b.onclick = () => choose(parseInt(b.dataset.k, 10)));
+  const sel = selectate();
+  if (sel.length) {
+    document.querySelectorAll(".option").forEach((b, i) => b.classList.toggle("selected", sel.includes(i)));
+    $("next").hidden = false;
+  }
 }
 
 function choose(k) {
@@ -218,6 +293,7 @@ $("next").onclick = () => {
 
 // ---------- 3. Rezultate ----------
 function finish() {
+  if (test.reluat) localStorage.removeItem(KEY_IN_CURS);
   const istoric = load(KEY_ISTORIC, []);
   const ts = Date.now();
   const rezultate = test.intrebari.map((q, idx) => {
@@ -595,7 +671,7 @@ $("sel-none").onclick = () => {
 
 // ---------- Backup ----------
 $("export").onclick = () => {
-  const data = { istoric: load(KEY_ISTORIC, []), comentarii: load(KEY_COMENT, {}) };
+  const data = { istoric: load(KEY_ISTORIC, []), comentarii: load(KEY_COMENT, {}), inCurs: load(KEY_IN_CURS, null) };
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }));
   a.download = "backup-grila.json";
@@ -611,7 +687,10 @@ $("import").onchange = (e) => {
       if (!Array.isArray(d.istoric)) throw new Error();
       save(KEY_ISTORIC, d.istoric);
       save(KEY_COMENT, d.comentarii || {});
+      if (d.inCurs) save(KEY_IN_CURS, d.inCurs);
+      else localStorage.removeItem(KEY_IN_CURS);
       renderStats();
+      renderResume();
       alert("Date importate.");
     } catch { alert("Fișier invalid."); }
   };
