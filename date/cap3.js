@@ -764,7 +764,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Neuronul senzorial și neuronul motor sunt componente ale actului reflex",
       "Reflexul de retragere include ca și componentă a arcului reflex neuronul senzorial, al cărui corp celular se află în afara măduvei spinării, în ganglionul de pe rădăcina dorsală a nervului spinal",
       "Actul reflex reprezintă un exemplu simplu de activitate nervoasă",
-      "Arcul reflex este exemplificai de strănut, tuse sau înghițit"
+      "Arcul reflex este exemplificat de strănut, tuse sau înghițit"
     ],
     "corect": [0, 2, 3]
   },
@@ -773,8 +773,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Selectați afirmațiile adevărate referitoare la reflex:",
     "raspunsuri": [
       "Poate fi automat și inconștient (fără implicarea encefalului sau a unei activități mentale)",
-      "Întotdeauna include encefalul, fiind voluntar ȘI conștient",
-      "Ajută la menținerea homeostazie! organismului",
+      "Întotdeauna include encefalul, fiind voluntar și conștient",
+      "Ajută la menținerea homeostaziei organismului",
       "Reprezintă cea mai complexă activitate îndeplinită de către sistemul nervos",
       "Contribuie la realizarea unor activități precum strănutul, tusea, înghițitul"
     ],
@@ -784,11 +784,11 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_66",
     "text": "Despre neuronul în repaus este adevărat că:",
     "raspunsuri": [
-      "Este polarizat, deoarece suprafața internă și cea externă a membrane! sale prezintă sarcini electrice opuse",
-      "Nu este polarizai, între suprafața internă și cea externă a membranei sale neexistând diferență de potențial",
+      "Este polarizat, deoarece suprafața internă și cea externă a membranei sale prezintă sarcini electrice opuse",
+      "Nu este polarizat, între suprafața internă și cea externă a membranei sale neexistând diferență de potențial",
       "Suprafața internă și cea externă a membranei sale nu au sarcini electrice, acestea se află doar la nivelul citoplasmei și al nucleului",
       "Citoplasma din interiorul său este electronegativă",
-      "FE. Suprafața externă a membranei sale are o încărcătură electrică pozitivă"
+      "Suprafața externă a membranei sale are o încărcătură electrică pozitivă"
     ],
     "corect": [0, 3, 4]
   },
@@ -808,8 +808,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_68",
     "text": "Despre potențialul de repaus este adevărat că:",
     "raspunsuri": [
-      "Reprezintă un dezechilibru ionic între sarcinile electrice aflate de o parte și de alta i membranei celulare",
-      "Are o valoare de aproximativ 70 milivolți (mV), fiind considerat „electronegativ”, Prin convenție (-70 mV), datorită sarcinii electrice negative de pe suprafața internă A membranei celulare în raport cu suprafața externă pozitivă",
+      "Reprezintă un dezechilibru ionic între sarcinile electrice aflate de o parte și de alta a membranei celulare",
+      "Are o valoare de aproximativ 70 milivolți (mV), fiind considerat „electronegativ”, prin convenție (-70 mV), datorită sarcinii electrice negative de pe suprafața internă a membranei celulare în raport cu suprafața externă pozitivă",
       "Este determinat de prezența ionilor negativi în exteriorul celulei, reprezentați de ionii de potasiu",
       "Este rezultatul unui exces de ioni negativi în exteriorul membranei celulare, comparativ cu interiorul acesteia",
       "Este rezultatul unui ușor exces de ioni negativi în citoplasmă, incluzând ionii de fosfat organic și proteinele citoplasmatice"
@@ -908,7 +908,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Sunt alcătuite din fosfolipidele membranare care suferă modificări funcționale, deschizându-se atunci când membrana este stimulată",
       "Sunt alcătuite din proteine membranare care suferă modificări structurale pentru a se putea deschide atunci când membrana este stimulată",
       "Funcționează împotriva gradientului de concentrație al ionilor",
-      "Sunt specifice pentru diferite tipuri de ioni (de exemplu, canele de sodiu, canele de potasiu) 78."
+      "Sunt specifice pentru diferite tipuri de ioni (de exemplu, canele de sodiu, canele de potasiu)"
     ],
     "corect": [0, 2, 4]
   },
@@ -944,7 +944,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "În timpul repolarizării membranei neuronale se deschid canalele de sodiu voltaj-dependente",
       "Atunci când potențialui de repaus atinge valoarea de aproximativ -55 mV (valoare care reprezintă intensitatea prag a impulsului nervos) se deschid canalele de calciu voltaj-dependente",
       "După ce potențialul de acțiune a depășit zona inițială, membrana începe să se repolarizeze, canalele de sodiu se închid, iar cele de potasiu de deschid, declanșând ieșirea potasiului din celulă",
-      "Influxul de sodiu în celulă prin canalele de sodiu voltaj-dependente durează 102 secunde, după care canelele se închid"
+      "Influxul de sodiu în celulă prin canalele de sodiu voltaj-dependente durează 10^3 secunde, după care canelele se închid"
     ],
     "corect": [1, 2, 4]
   },
@@ -990,7 +990,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "raspunsuri": [
       "Potențial de acțiune — impuls nervos — undă de depolarizare — propagare ca o reacție în lanț",
       "Dezechilibru între sarcinile electrice de pe cele două suprafețe (internă și externă) ale membranei neuronale — potențial de repaus — potențial „electropozitiv”, exprimat prin convenție ca (+70 milivolți)",
-      "Dezechilibru ionic între sarcinile electrice aflate de-o parte și de alta a membranei neuronului — potențial de repaus — potențial „electronegativ”, exprimat prin convenție ca",
+      "Dezechilibru ionic între sarcinile electrice aflate de-o parte și de alta a membranei neuronului — potențial de repaus — potențial „electronegativ”, exprimat prin convenție ca (-70 mV)",
       "Potențial postsinaptic excitator (PPSE) — depolarizare și impuls nervos la nivelul neuronului postsinaptic",
       "Potențial postsinaptic inhibitor (PPSI) — menținerea canalelor de sodiu în stare închisă — inhibarea apariției impulsurilor nervoase la nivelul neuronului postsinaptic"
     ],
@@ -1001,7 +1001,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Alegeți răspunsurile corecte dintre cele enumerate mai jos:",
     "raspunsuri": [
       "Odată cu accesul ionilor de sodiu în celulă (prin deschiderea canalelor cu poartă pentru acest ion), membrana neuronului se depolarizează",
-      "Influxul ionilor de Na⁺ prin canalele de sodiu voltaj-dependente (deschise la atingerea intensității prag) durează o miime de secundă (10 sec), apoi canalele se închid",
+      "Influxul ionilor de Na⁺ prin canalele de sodiu voltaj-dependente (deschise la atingerea intensității prag) durează o miime de secundă (10^-3 sec), apoi canalele se închid",
       "Reîntoarcerea neuronului la starea de repaus necesită deschiderea canalelor de sodiu și accesul sodiului în celulă",
       "În stare depolarizată, neuronul este refractar (nu poate transmite un alt potențial de acțiune decât dacă stimulul este foarte puternic)",
       "Neuronul este capabil să genereze un nou potențial de acțiune odată ce ionii de sodiu au fost pompați în exterior și potențialul de repaus restabilit"
@@ -1048,11 +1048,11 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_88",
     "text": "Despre propagarea (conducerea) saltatorie a impulsului nervos este adevărat că:",
     "raspunsuri": [
-      "Axonul nu se poate depolariza decât la nivelul nodurilor Ranvier",
       "Se datorează prezenței tecii de mielină a axonilor și dendritelor din SNC și SNP",
       "Reprezintă o transmitere mai lentă a impulsului nervos față de conducerea continuă de la nivelul neuronilor amielinici",
       "Mărește considerabil viteza impulsurilor nervoase la nivelul neuronilor mielinici, permițând reacții mai rapide la stimuli",
-      "Impulsul nervos progresează constant de a lungul axonului"
+      "Impulsul nervos progresează constant de a lungul axonului",
+      "Axonul nu se poate depolariza decât la nivelul nodurilor Ranvier",
     ],
     "corect": [0, 2, 4]
   },
@@ -1085,7 +1085,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Alegeți afirmațiile adevărate dintre cele de mai jos:",
     "raspunsuri": [
       "Canalele de sodiu voltaj-dependente se deschid în momentul când membrana neuronală se repolarizează, permițând accesul Na⁺ în celulă",
-      "Întregul ciclu de depolarizare-repolarizare al neuronului durează mai puțin de 10 secunde",
+      "Întregul ciclu de depolarizare-repolarizare al neuronului durează mai puțin de 10^-3 secunde",
       "Canalele de sodiu și cele de potasiu sunt exemple de „gated channels” (canale cu poartă)",
       "Nodul lui Ranvier (nodul Ranvier) reprezintă spațiul dintre două celule Schwann succesive în SNP",
       "Unda de depolarizare se propagă ca o reacție în lanț de-a lungul neuronului și reprezintă potențialul de repaus"
@@ -1111,7 +1111,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Atunci când reprezintă joncțiunea dintre un neuron motor și o celulă musculară striată, poartă numele de sinapsă neuromusculară sau placă motorie",
       "Reprezintă joncțiunea dintre un neuron motor și un efector, spre exemplu o glandă sau un mușchi",
       "Prezintă în interior un spațiu (fantă postsinaptică) la nivelul căruia se sintetizează neurotransmițătorii",
-      "Prezintă în interior un spațiu denumit fantă sinaptică, prin care vor difuza rapid neurotransmițătorii eliberați sub acțiune impulsului nervos ajuns la butonul terminal al axonului neuronului presinaptic",
+      "Prezintă în interior un spațiu denumit fantă sinaptică, prin care vor difuza rapid neurotransmițătorii eliberați sub acțiunea impulsului nervos ajuns la butonul terminal al axonului neuronului presinaptic",
       "Reprezintă joncțiunea dintre doi neuroni (unul presinaptic și unul postsinaptic) și fibra musculară (striată sau netedă)"
     ],
     "corect": [0, 1, 3]
@@ -1121,16 +1121,16 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Alegeți asocierile corecte dintre cele de mai jos:",
     "raspunsuri": [
       "Sinapsa dintre un neuron motor și o fibră (celulă) musculară striată — placă motorie — sinapsă neuromusculară",
-      "Fanta sinaptică — spațiu plin cu aer în exteriorul sinapsei — asigură difuziunea lentă 4 neurotransmițătorilor",
+      "Fanta sinaptică — spațiu plin cu aer în exteriorul sinapsei — asigură difuziunea lentă a neurotransmițătorilor",
       "Butonul terminal al axonului neuronului presinaptic — lipsit de mitocondrii — lipsit de neurotransmițători stocați în vezicule",
       "Butonul terminal al axonului neuronului presinaptic — vezicule sinaptice cu neurotransmițători — eliberarea neurotransmițătorilor prin exocitoză",
-      "Acetilcolina neurotransmițător pentru joncțiunea/sinapsa neuromusculară -neurotransmițător în sistemul nervos vegetativ parasimpatic"
+      "Acetilcolina — neurotransmițător pentru joncțiunea/sinapsa neuromusculară — neurotransmițător în sistemul nervos vegetativ parasimpatic"
     ],
     "corect": [0, 3, 4]
   },
   {
     "id": "cap3_95",
-    "text": "Care dintre următoarele afirmații despre activitatea sinaptică sunt adevărate? 96.",
+    "text": "Care dintre următoarele afirmații despre activitatea sinaptică sunt adevărate?",
     "raspunsuri": [
       "Când impulsul nervos ajunge la capătul axonului neuronului presinaptic, el „sare” peste spațiul din exteriorul sinapsei, denumit fantă sinaptică",
       "Când impulsul nervos ajunge la capătul axonului neuronului presinaptic, nu poate sări peste spațiul din interiorul sinapsei, denumit fantă sinaptică",
@@ -1181,7 +1181,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Transmiterea la nivelul unei sinapse presupune următoarele evenimente:",
     "raspunsuri": [
       "Deschiderea canalelor de calciu voltaj-dependente de către potențialul de acțiune odată ajuns la nivelul butonului terminal al axonului neuronului presinaptic",
-      "Pătrunderea Ca? din exterior în axonul neuronului presinaptic, prin canalele de calciu voltaj-dependente deschise",
+      "Pătrunderea Ca²⁺ din exterior în axonul neuronului presinaptic, prin canalele de calciu voltaj-dependente deschise",
       "Descompunerea enzimatică a moleculelor de neurotransmițător imediat ce ele sunt exocitate din membrana postsinaptică",
       "Legarea neurotransmițătorilor de receptorii aflați pe suprafața membranei postsinaptice (după ce aceștia au difuzat în fanta sinaptică)",
       "Repolarizarea dendritelor neuronului postsinaptic, ceea ce duce la transmiterea impulsului nervos mai departe"
@@ -1207,8 +1207,9 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Sunt substanțe cu structură chimică diferită (catecolamine, aminoacizi etc.)",
       "Sunt eliberați din butonii terminali ai axonului neuronului presinaptic și difuzează rapid prin fanta sinaptică spre membrana postsinaptică",
       "Sunt eliberați din fanta sinaptică spre membrana presinaptică prin transport activ",
-      "Legarea lor de receptorii aflați pe suprafața membranei postsinaptice generează un",
-      "Sunt eliberați în fanta sinaptică pentru a stimula sau inhiba neuronul presinaptic potențial de acțiune în neuronul postsinaptic"
+      "Sunt eliberați în fanta sinaptică pentru a stimula sau inhiba neuronul presinaptic potențial de acțiune în neuronul postsinaptic",
+      "Legarea lor de receptorii aflați pe suprafața membranei postsinaptice generează un potenţial de acţiune în neuronul postsinaptic"
+      
     ],
     "corect": [0, 1, 4]
   },
@@ -1228,7 +1229,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_103",
     "text": "Substanțele chimice denumite neurotransmițători:",
     "raspunsuri": [
-      "Difuzează rapid prin fanta sinaptică, odată ce au fost eliberate din veziculele sinaptice sub acțiunea ionilor de Ca** care pătrund din exterior în axon în urma deschiderii canalelor de calciu voltaj-dependente",
+      "Difuzează rapid prin fanta sinaptică, odată ce au fost eliberate din veziculele sinaptice sub acțiunea ionilor de Ca²⁺ care pătrund din exterior în axon în urma deschiderii canalelor de calciu voltaj-dependente",
       "Sunt sintetizați intermitent și eliberați continuu din butonii terminali ai dendritelor",
       "Sunt sintetizați continuu, stocați în vezicule sinaptice de la nivelul butonilor terminali ai axonului și eliberați sub acțiunea impulsului nervos ajuns la nivelul membranei dendritei postsinaptice",
       "Sunt sintetizați continuu, stocați în veziculele sinaptice și eliberați sub acțiunea impulsului nervos ajuns la nivelul butonului terminal al axonului neuronului presinaptic",
@@ -1264,7 +1265,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_106",
     "text": "Care dintre următoarele afirmații sunt false?",
     "raspunsuri": [
-      "Nu sunt neurotransmițători catecolaminele, reprezentate de adrenalina, noradrenalina și dopamine",
+      "Nu sunt neurotransmițători catecolaminele, reprezentate de adrenalina, noradrenalina și dopamina",
       "Colinesteraza (proteină cu rol enzimatic) catalizează sinteza acetilcolinei (un ester) în interiorul joncțiunii neuromusculare",
       "Norepinefrina este eliberată de către neuronii simpatici pentru a declanșa reacția de luptă sau fugă („fight or flight”)",
       "Anhidraza carbonică nu este un neurotransmițător, ci o enzimă care intervine în formarea acidului carbonic în eritrocit",
@@ -1360,8 +1361,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_114",
     "text": "Alegeți asocierile corecte dintre cele de mai jos:",
     "raspunsuri": [
-      "Acetilcolina - o amină — placa senzorială (joncțiune de tip „gap”)",
-      "Noradrenalina — o proteină - placa motorie (joncțiune difuză în celula musculară netedă)",
+      "Acetilcolina — o amină — placa senzorială (joncțiune de tip „gap”)",
+      "Noradrenalina — o proteină — placa motorie (joncțiune difuză în celula musculară netedă)",
       "Dopamina — catecolamină — eliberată în encefal — reglarea unor funcții motorii",
       "Serotonina — reglarea somnului — reglarea stării de veghe — eliberată în encefal",
       "Glicina — aminoacid — măduva spinării — rol inhibitor al unor neuroni"
@@ -1373,7 +1374,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Alegeți asocierile corecte despre neurotransmițători (eliberare și acțiuni):",
     "raspunsuri": [
       "Acetilcolina — declanșarea contracției mușchilor scheletici — neurotransmițător al plăcii motorii",
-      "Noradrenalina — eliberată de către neuronii din sistemul nervos vegetativ simpatic -structură chimică catecolaminică",
+      "Noradrenalina — eliberată de către neuronii din sistemul nervos vegetativ simpatic — structură chimică catecolaminică",
       "Dopamina, glicina și glutamatul — eliberate de către neuronii din sistemul nervos vegetativ simpatic — structuri chimice proteice",
       "Noradrenalina și dopamina — eliberare de către neuroni din encefal",
       "Serotonina și colinesteraza — acționează dublu, ca și enzime și neurotransmițători ai plăcii motorii"
@@ -1444,11 +1445,11 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_121",
     "text": "Potențialele postsinaptice excitatorii sunt induse de neurotransmițători care:",
     "raspunsuri": [
-      "Inhibă apariția impulsurilor nervoase în neuronul postsinaptic, prin aceasta menținându-l",
       "Excită neuronul postsinaptic, producând depolarizarea nucleului și a organitelor citoplasmatice",
       "Excită neuronul postsinaptic, producând depolarizarea membranei acestuia",
       "Mențin canalele de sodiu în stare închisă, ceea ce împiedică intrarea ionilor de sodiu în celulă",
-      "Deschid canalele de sodiu, permițând accesul acestor cationi în celulă în stare polarizată"
+      "Deschid canalele de sodiu, permițând accesul acestor cationi în celulă în stare polarizată",
+      "Inhibă apariția impulsurilor nervoase în neuronul postsinaptic, prin aceasta menținându-l"
     ],
     "corect": [1, 3]
   },
@@ -1556,7 +1557,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Ambele tipuri de tracturi sunt constituite din corpii celulari ai neuronilor senzoriali, respectiv motori",
       "Cele ascendente transmit impulsuri dinspre encefal către mușchi și glande",
       "Cele descendente transmit impulsuri dinspre encefal către mușchi și glande",
-      "Conexiunile nervoase realizate prin aceste tracturi asigură un sistem de comunicare bidirecțională între mușchi, glande și encefal suie."
+      "Conexiunile nervoase realizate prin aceste tracturi asigură un sistem de comunicare bidirecțională între mușchi, glande și encefal"
     ],
     "corect": [0, 3, 4]
   },
