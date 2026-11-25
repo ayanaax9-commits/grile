@@ -1532,7 +1532,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "raspunsuri": [
       "La începutul profazei — condensarea cromatinei și formarea de filamente vizibile",
       "În timpul interfazei — desfășurarea funcțiilor specifice ale celulei",
-      "În timpul fazei G2- sinteza enzimelor și a proteinelor structurale",
+      "În timpul fazei G2 — sinteza enzimelor și a proteinelor structurale",
       "În timpul metafazei — alinierea perechilor de cromatide în planul ecuatorial (alinierea centromerilor în placa metafazică)",
       "În timpul telofazei — despiralizarea și dispersarea cromozomilor ajunși la polii opuși ai celulei, pentru a forma mase de cromatină"
     ],
@@ -1987,7 +1987,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Selectați afirmațiile adevărate cu privire la gene:",
     "raspunsuri": [
       "Sunt segmente funcționale ale cromozomilor",
-      "Sunt în număr de circa 3x10 în nucleii celulelor umane",
+      "Sunt în număr de circa 3x10^3 în nucleii celulelor umane",
       "Pe una dintre moleculele ADN ale dublului helix, la locul unde gena va fi exprimată, se leagă enzima ARN-polimerază, declanșând transcripția",
       "Genele sunt ținute sub control în timpul mitozei, cromozomul fiind compactat",
       "Conțin secvențe nucleotidice cu uracil și riboză"
@@ -2278,7 +2278,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "Celulă matură anucleată — leucocit — element figurat al sângelui",
       "Celula nervoasă — oligodedrocitul — mai multe prelungiri — generarea impulsului nervos",
       "Celulă cu con și celulă cu bastonaș — neuroni receptori — retină (stratul intern)",
-      "Mugure gustativ — celule specializate cu microvilozități — fibre nervoase senzoriale ale nervilor VII și LX"
+      "Mugure gustativ — celule specializate cu microvilozități — fibre nervoase senzoriale ale nervilor VII și IX"
     ],
     "corect": [0, 3, 4]
   },
@@ -2308,7 +2308,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
   },
   {
     "id": "cap1_193",
-    "text": "Despre relația celule — energie sunt adevărate următoarele:",
+    "text": "Despre relația celule - energie sunt adevărate următoarele:",
     "raspunsuri": [
       "Fiecare reacție chimică a organismului implică schimb de energie",
       "Orice reacție chimică în care se eliberează energie se numește endergonică",

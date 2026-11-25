@@ -1,6 +1,5 @@
 adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
 [
-
   {
     "id": "cap3_1",
     "text": "Alegeți afirmațiile adevărate despre sistemul nervos:",
