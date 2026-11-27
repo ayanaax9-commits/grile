@@ -1339,7 +1339,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Selectați afirmațiile adevărate referitoare la enzime:",
     "raspunsuri": [
       "Fiecare enzimă catalizează o singură reacție chimică, scăzând energia de activare necesară desfășurării acesteia",
-      "O enzimă poate cataliza una sau mai multe reacții. chimice diferite, situație în care se regăsește modificată structural la finalul reacției sau reacțiilor catalizate",
+      "O enzimă poate cataliza una sau mai multe reacții chimice diferite, situație în care se regăsește modificată structural la finalul reacției sau reacțiilor catalizate",
       "Substanța asupra căreia acționează o enzimă pentru a se obține reactantul se numește produs final",
       "Substanța asupra căreia acționează o enzimă pentru a se obține produsul final se numește substrat",
       "Amilaza, catalaza și peptidaza sunt exemple de proteine care acționează ca enzime asupra unor substraturi"
@@ -1615,7 +1615,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Selectați afirmațiile false referitoare la faza G2 a ciclului celular:",
     "raspunsuri": [
       "Este perioada în care celula se pregătește pentru intrarea în telofază",
-      "Este perioada în care celula se pregătește pentru. mitoză",
+      "Este perioada în care celula se pregătește pentru mitoză",
       "Urmează după faza S, la sfârșitul căreia în nucleu există 92 de cromatide (câte două cromatide/cromozom)",
       "Are loc înaintea fazei S de replicare a acidului dezoxiribonucleic",
       "Cromozomii sunt spiralizați, cu o singură cromatidă, așezați la nivelul plăcii ecuatoriale"
@@ -1716,7 +1716,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "În metafază are loc alinierea cromozomilor la polii celulei-mamă",
       "În anafază, câte un set de 46 de cromozomi cu o singură cromatidă migrează spre fiecare din cei doi poli ai celulei"
     ],
-    "corect": [1, 3, 4]
+    "corect": [1, 2, 4]
   },
   {
     "id": "cap1_144",
@@ -2170,7 +2170,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
       "ARN de reglare — copierea codului genetic al ARNm prin transcripție — transferul informației pe ARNt",
       "Codon „stop” — codon care codifică un aminoacid — codon care continuă alungirea lanțului proteic",
       "ARNt - molecule libere în citoplasma celulelor și care conțin anticodonul — atașare de aminoacizi specifici și transportul lor la ribozomi",
-      "Introni — secvențe intercalate necodante ale ARNm -— îndepărtare când se finalizează structura moleculei de ARNm"
+      "Introni — secvențe intercalate necodante ale ARNm — îndepărtare când se finalizează structura moleculei de ARNm"
     ],
     "corect": [0, 3, 4]
   },
@@ -2299,7 +2299,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "text": "Despre membrana celulară (plasmatică) se poate afirma că:",
     "raspunsuri": [
       "Nu este permeabilă pentru molecule mici (apă, oxigen)",
-      "La celula (fibra) musculară poartă denumirea de sarcolemă",
+      "Celula (fibra) musculară poartă denumirea de sarcolemă",
       "Permite trecerea prin difuziune a unor molecule mici de solvit",
       "Sarcolema poate prezenta un sistem de invaginări (sistemul tubilor transversali sau al tubilor T)",
       "În timpul endocitozei, o mică porțiune a membranei celulare se pliază și înglobează particule din interiorul celulei, pe care le va elimina în exterior"
@@ -2514,10 +2514,10 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "id": "cap1_210",
     "text": "Despre transcripție și translație sunt adevărate următoarele asocieri:",
     "raspunsuri": [
-      "Nucleu — ADN - transcripție — ARNm — ieșire prin porul membranei nucleare",
+      "Nucleu — ADN — transcripție — ARNm — ieșire prin porul membranei nucleare",
       "Catenă matriță de ADN — secvență de baze azotate TACGT — transcripție — moleculă de ARNm — secvență de baze azotate AUGCA",
-      "Catenă dormantă de ADN -— translație — ARNr — introni, exoni",
-      "Catenă matriță de ADN - copiere conform noncomplementarității bazelor - ARNm, ARNt - transcripție",
+      "Catenă dormantă de ADN — translație — ARNr — introni, exoni",
+      "Catenă matriță de ADN — copiere conform noncomplementarității bazelor — ARNm, ARNt — transcripție",
       "Citoplasmă — ribozomi — expunerea codonilor de pe ARNm — cuplarea codon-anticodon complementar de pe ARNt — poziționarea aminoacizilor — translație"
     ],
     "corect": [0, 1, 4]
@@ -2598,7 +2598,7 @@ adaugaIntrebari("cap1", "Introducere în anatomie şi fiziologie. Celulele şi f
     "id": "cap1_217",
     "text": "În translație evenimentele decurg astfel:",
     "raspunsuri": [
-      "Când codonul moleculei de ARNm își întâlnește anticodonul de pe molecula de ARN, bazele lor se împerechează",
+      "Când codonul moleculei de ARNm își întâlnește anticodonul de pe molecula de ARNt, bazele lor se împerechează",
       "Aminoacidul transportat de a doua moleculă de ARNm este poziționat lângă primul aminoacid, iar între ei se stabilește o legătură peptidică cu ajutorul unei enzime lizozomale",
       "După ce primul aminoacid este legat de al doilea aminoacid printr-o legătură peptidică cu ajutorul unei enzime ribozomale, ribozomul se deplasează pe ARNm cu un codon",
       "Ribozomul deplasează peptidul/peptida alcătuită din primii doi aminoacizi, pentru a putea atașa un al treilea aminoacid, adus de o altă moleculă de ARNt",

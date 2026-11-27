@@ -68,7 +68,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Neuronii ale căror prelungiri se extind sub formă de nervi (senzitivi, motori, micști) au corpii celulari localizați în SNC sau în vecinătatea acestuia",
       "Transmite spre SNC informații despre stimulii primiți din mediul înconjurător",
       "Este alcătuit din măduva spinării și cele 31 de perechi de nervi spinali",
-      "E . Este localizat în canalul rahidian, pe care îl părăsește pentru a se distribui organelor interne"
+      "Este localizat în canalul rahidian, pe care îl părăsește pentru a se distribui organelor interne"
     ],
     "corect": [0, 1, 2]
   },
@@ -1637,8 +1637,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_137",
     "text": "Selectați dintre enunțurile de mai jos referitoare la nervii spinali, pe cele care conțin o afirmație falsă și una adevărată:",
     "raspunsuri": [
-      "Conțin doar fibre nervoase vegetative (autonome) postganglionare. Sunt nervi micști Și conțin fibre somatice și vegetative, senzoriale și motorii",
-      "Conțin fibre somatice și fibre vegetative. Asigură comunicarea dintre măduva spinării ȘI diverse părți ale corpului",
+      "Conțin doar fibre nervoase vegetative (autonome) postganglionare. Sunt nervi micști și conțin fibre somatice și vegetative, senzoriale și motorii",
+      "Conțin fibre somatice și fibre vegetative. Asigură comunicarea dintre măduva spinării și diverse părți ale corpului",
       "Se combină temporar înainte de a ajunge la destinație, formând rețele complexe. În interiorul plexurilor nervoase se găsesc fibre interconectate, provenite de la mai mulți nervi spinali",
       "Cele patru plexuri majore formate prin interconectarea fibrelor nervilor spinali sunt: cervical, brahial, lombar și sacral. Cele patru plexuri vasculare formate prin combinarea nervilor spinali sunt rețele complexe de fibre nervoase interconectate",
       "Fiecare nerv spinal prezintă câte două rădăcini dorsale și una ventrală. Rădăcina ventrală este motorie și nu prezintă ganglioni formați din corpi neuronali"
@@ -1713,7 +1713,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Rădăcina ventrală prezintă pe traseul ei un ganglion format din corpii celulari ai neuronilor motori",
       "Rădăcina dorsală conține corpii celulari și axonii neuronilor senzoriali din ganglionul aflat pe traseul rădăcinii (axoni care se îndreaptă spre măduva spinării)",
       "Rădăcina ventrală conține axonii neuronilor motori care se îndreptă spre măduva spinării",
-      "Rădăcina ventrală își are originea în cornul anterior al substanței cenușii a măduvei spinării Și este motorie, având traiect spre efectori"
+      "Rădăcina ventrală își are originea în cornul anterior al substanței cenușii a măduvei spinării și este motorie, având traiect spre efectori"
     ],
     "corect": [0, 2, 4]
   },
@@ -1745,8 +1745,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_146",
     "text": "Despre bulbul rahidian este adevărat că:",
     "raspunsuri": [
-      "Reprezintă un pasaj pentru fibrele nervoase descendente, dintre care o parte se",
-      "Asigură conectarea măduvei spinării cu structurile aflate în cutia craniană intersectează formând decusația piramidală",
+      "Asigură conectarea măduvei spinării cu structurile aflate în cutia craniană ", 
+      "Reprezintă un pasaj pentru fibrele nervoase descendente, dintre care o parte se intersectează formând decusația piramidală",
       "Conține grupuri de tracturi nervoase denumite formațiune reticulospinală",
       "Conține nuclei ce reprezintă centrii de control ai unor activități precum strănutul, voma, tusea și deglutiția",
       "Formațiunea reticulară pregătește cortexul cerebral pentru interpretarea impulsurilor senzoriale și stimulează procesele cognitive"
@@ -1793,7 +1793,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_150",
     "text": "Alegeți asocierile greșite referitoare la nervii cranieni:",
     "raspunsuri": [
-      "Nervi motori — perechile III. IV, V",
+      "Nervi motori — perechile III, IV, V",
       "Nervi motori — perechile III, VI, XI",
       "Nervi senzorial — perechile I, II, III",
       "Nervi senzoriali — perechile I, II, VII",
@@ -1808,8 +1808,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Nervii olfactiv, optic și facial sunt senzoriali",
       "Nervii olfactiv, optic și vestibulo-cohlear sunt senzorial, deservind, în ordine, mirosul, văzul, auzul și echilibrul",
       "Nervii oculomotor, trohlear, abducens și accesor sunt motori",
-      "Nervii I, II și VII sunt micști",
-      "Nervii III, IV, VI, XI și XII nu sunt senzoriali sau micști"
+      "Nervii III, IV, VI, XI și XII nu sunt senzoriali sau micști",
+      "Nervii I, II și VII sunt micști"
     ],
     "corect": [1, 2, 3]
   },
@@ -1829,7 +1829,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_153",
     "text": "Despre nervii cranieni motori este adevărat că:",
     "raspunsuri": [
-      "Nervul III este denumit trohlear, nervul IV — oculomotor, iar nervul VI - abducens",
+      "Nervul III este denumit trohlear, nervul IV — oculomotor, iar nervul VI —abducens",
       "Nervii III, IV și VI sunt responsabili de mișcări oculare",
       "Nervul VI are originea aparentă între bulbul rahidian și punte",
       "Nervul XI denumit și accesor, inervează mușchii limbii și gâtului",
@@ -1853,7 +1853,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_155",
     "text": "Alegeți asocierile corecte despre unii nervi cranieni:",
     "raspunsuri": [
-      "Nervul facial (VII) — funcție motorie reprezentată de mimică - funcție senzorială reprezentată de percepția gustului",
+      "Nervul facial (VII) — funcție motorie reprezentată de mimică —funcție senzorială reprezentată de percepția gustului",
       "Nervul vag — origine aparentă la nivelul bulbului olfactiv — inervația unor viscere (stomac, inimă, rinichi)",
       "Nervul VI — abducens — mișcări oculare — nerv motor",
       "Nervul glosofaringian — conține fibre senzoriale și motorii — inervează structurile limbii și faringelui",
@@ -1914,10 +1914,10 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Selectați informațiile corecte referitoare la ventriculii cerebrali:",
     "raspunsuri": [
       "Sunt în număr de patru, dintre care trei sunt situați în interiorul emisferelor cerebrale iar al patrulea este între cerebel și diencefal",
-      "Sunt în număr de patru, dintre care doi sunt situați în interiorul emisferelor cerebrale, unul la nivelul diencefalului iar al patrulea este între cerebel și trunchiul cerebral",
+      "Sunt în număr de patru, dintre care doi sunt situați în interiorul emisferelor cerebrale, unul la nivelul diencefalului, iar al patrulea este între cerebel și trunchiul cerebral",
       "Cei doi ventriculi laterali sunt interconectați printr-o punte de substanță cenușie, denumită foramen interventricular",
       "Prin apeductul cerebral se realizează comunicarea dintre ventriculii III și IV",
-      "Niciunul dintre ventriculi nu comunică între ei, ci doar își varsă conținutul (lichidul cefalorahidian) în canalul central (ependimar) de a nivelul măduvei spinării"
+      "Niciunul dintre ventriculi nu comunică între ei, ci doar își varsă conținutul (lichidul cefalorahidian) în canalul central (ependimar) de la nivelul măduvei spinării"
     ],
     "corect": [1, 3]
   },
@@ -2118,12 +2118,12 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Despre encefal este adevărat că:",
     "raspunsuri": [
       "Recepționează impulsuri nervoase de la măduva spinării și de la cele douăsprezece perechi de nervi cranieni care inervează organele de simț, mușchii și glandele",
-      "Conține cele două emisfere cerebrale, dreaptă și stângă, este acoperit de meninge Și este înconjurat de lichidul cefalorahidian, care va fi drenat în arterele carotide",
+      "Conține cele două emisfere cerebrale, dreaptă și stângă, este acoperit de meninge și este înconjurat de lichidul cefalorahidian, care va fi drenat în arterele carotide",
       "Dispune de o vastă rețea de capilare cu rol în schimbul de gaze și nutrimente, precum și în îndepărtarea produșilor reziduali",
       "Este împărțit în patru structuri principale: emisferele cerebeloase, cerebelul, diencefalul și trunchiul cerebral",
-      "Este extrem de sensibil la scăderea nivelului de O» sau glucoză"
+      "Este extrem de sensibil la scăderea nivelului de O2 sau glucoză"
     ],
-    "corect": [0, 1, 3, 4]
+    "corect": [0, 2, 4]
   },
   {
     "id": "cap3_178",
@@ -2187,37 +2187,40 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
   },
   {
     "id": "cap3_183",
-    "text": "////Studiați enunțurile de mai jos, notate cu cifre de la 1 la 5. Selectați răspunsurile corecte astfel: A — dacă enunțurile 3 și 4 sunt adevărate și se referă la nervii spinali;",
+    "text": "Studiați enunțurile de mai jos, notate cu cifre de la 1 la 5. Selectați răspunsurile corecte astfel: A — dacă 1 și 3 se referă la conținutul ventriculilor; B dacă 1 și 3 sunt adevărate; C dacă 2 este o afirmație falsă; D — dacă 4 și 5 descriu caracteristici anatomice ale ventriculilor; E — dacă 5 este o afirmație falsă.",
+    "imagine": "img/cap3_183.png",
     "raspunsuri": [
-      "B — dacă enunțurile 1 și 2 sunt false; C — dacă enunțurile 1 și 4 sunt false; D — dacă 1 și 2 sunt adevărate și E — dacă 2 și 5 sunt adevărate și descriu nervi cranieni.",
-      "Nervul optic, nerv motor, transmite informații și comenzi legate de văz și devine vizibil la nivelul mezencefalului",
-      "Unul dintre nervii cranieni responsabili de gust și salivație este nervul facial (VII)",
-      "Nervii spinali, în număr de 31 de perechi sunt grupați în cervicali (8 perechi), toracici (12 perechi), lombari (5 perechi), sacrali (5 perechi) și coccigieni (o pereche)",
-      "Emergența nervilor spinali din măduva spinării are loc prin intermediul rădăcinilor ventrale, provenite din coarnele posterioare ale substanței cenușii/Cele 12 perechi de nervi cranieni aparțin diferitelor zone ale encefalului și trec pe dedesubtul emisferelor cerebrale"
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
     ],
     "corect": [2, 4]
   },
   {
     "id": "cap3_184",
-    "text": "////În emisferele cerebrale se găsesc o serie de cavități denumite ventriculi. Selectați răspunsurile corecte astfel: A — dacă enunțurile 1 și 3 se referă la conținutul ventriculilor; B dacă 1 și 3 sunt adevărate; C dacă 2 este o afirmație falsă; D — dacă 4 și 5 descriu caracteristici anatomice ale ventriculilor; E — dacă 5 este o afirmație falsă.",
+    "text": "În emisferele cerebrale se găsesc o serie de cavități denumite ventriculi. Selectați răspunsurile corecte astfel: A — dacă enunțurile 1 și 3 se referă la conținutul ventriculilor; B dacă 1 și 3 sunt adevărate; C dacă 2 este o afirmație falsă; D — dacă 4 și 5 descriu caracteristici anatomice ale ventriculilor; E — dacă 5 este o afirmație falsă.",
+    "imagine": "img/cap3_184.png",
     "raspunsuri": [
-      "Lichidul cefalorahidian servește nevoilor nutriționale ale celulelor nervoase",
-      "Ventriculul al patrulea este localizat între trunchiul cerebral și cerebel",
-      "Fluidul prezent în ventriculi este clar, apos, asemănător cu limfa",
-      "Ventriculii laterali comunică între ei printr-un orificiu denumit foramen interventricular",
-      "Ventriculul al treilea este situat la nivelul diencefalului și comunică prin apeductul cerebral cu ventriculul al patrulea"
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
     ],
     "corect": [0, 1, 3]
   },
   {
     "id": "cap3_185",
-    "text": "////Studiați enunțurile de mai jos, notate cu cifre de la 1 la 5. Selectați răspunsurile corecte astfel: A — dacă nu toate enunțurile sunt adevărate; B — dacă 1 și 3 descriu aspecte anatomice și/sau funcționale ale emisferelor cerebrale; C — dacă toate enunțurile descriu funcții ale componentelor encefalului; D — dacă 2 și 4 descriu plexuri nervoase; E — dacă 5 conține informații despre vase de sânge de la nivelul encefalului.",
+    "text": "Studiați enunțurile de mai jos, notate cu cifre de la 1 la 5. Selectați răspunsurile corecte astfel: A — dacă nu toate enunțurile sunt adevărate; B — dacă 1 și 3 descriu aspecte anatomice și/sau funcționale ale emisferelor cerebrale; C — dacă toate enunțurile descriu funcții ale componentelor encefalului; D — dacă 2 și 4 descriu plexuri nervoase; E — dacă 5 conține informații despre vase de sânge de la nivelul encefalului.",
+    "imagine": "img/cap3_185.png",
     "raspunsuri": [
-      "Aria responsabilă pentru simțul mirosului se află profund în interiorul emisferelor cerebrale",
-      "Rețelele complexe rezultate din combinarea nervilor spinali, înainte ca aceștia să ajungă la destinație, se numesc plexuri",
-      "La nivelul lobului frontal este descrisă o regiune denumită aria lui Broca, legată de vorbire și de planificarea vorbirii",
-      "Plexul brahial este unul dintre cele patru plexuri nervoase majore rezultate din combinarea fibrelor provenite de la mai mulți nervi spinali",
-      "Poligonul lui Willis este alcătuit din arterele mari de la baza encefalului"
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
     ],
     "corect": [1, 3, 4]
   },
@@ -2275,7 +2278,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "raspunsuri": [
       "Neurotransmițători cu rol inhibitor — dopamina — adrenalina — noradrenalina",
       "Noradrenalină — norepinefrină — dopamină — epinefrină — neurotransmițători cu rol excitator",
-      "Aria lui Broca — arie cerebelară - situare în partea anterioară a emisferei cerebelare — rol în activitatea motorie legată de vorbire",
+      "Aria lui Broca — arie cerebelară —situare în partea anterioară a emisferei cerebelare — rol în activitatea motorie legată de vorbire",
       "Medulla oblongata — centri de control pentru vasoconstricție, reglarea respirației, frecvența cardiacă",
       "Colinesteraza — ARN polimeraza — catalaza — proteine cu rol enzimatic"
     ],
@@ -2299,7 +2302,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "raspunsuri": [
       "Encefalul consumă aproximativ 25% din cantitatea totală de oxigen a sistemului nervos. Țesutul din constituția encefalului este extrem de sensibil la diminuarea nivelului de oxigen și nu este sensibil la diminuarea celui de glucoză",
       "Șanțul central separă lobul parietal (situat posterior) de lobul frontal (situat anterior). Lobul occipital drept este situat posterior de lobul parietal drept",
-      "Lobul insulei, denumit și insula lui: Langerhans, este situat profund în fiecare emisferă. El reprezintă aria de proiecție pentru sensibilitatea vizuală",
+      "Lobul insulei, denumit și insula lui Langerhans, este situat profund în fiecare emisferă. El reprezintă aria de proiecție pentru sensibilitatea vizuală",
       "Fibrele nervoase care unesc cele două emisfere cerebrale se organizează într-o structură anatomică numită corp calos. Emisferele cerebrale reprezintă cea mai mare parte a encefalului",
       "În encefal se găsesc o serie de cavități interconectate denumite ventriculi. Ventriculii cerebrali conțin lichid cefalorahidian, cu rol nutritiv pentru țesutul nervos"
     ],
@@ -2310,8 +2313,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "text": "Identificați asocierile corecte referitoare la componentele encefalului:",
     "raspunsuri": [
       "Cerebelul — localizare anterioară față de trunchiul cerebral — coordonarea și gestionarea emoțiilor împreună cu sistemul limbic",
-      "Mezencefalul — localizare superioară și posterioară față de cerebel — releu între măduva spinării Și talamus pentru semnalele senzitive",
-      "Bulbul rahidian -— localizare în cutia craniană, continuând măduva spinării — trimite semnale către cerebel și integrează semnalele primite de la măduva spinării",
+      "Mezencefalul — localizare superioară și posterioară față de cerebel — releu între măduva spinării și talamus pentru semnalele senzitive",
+      "Bulbul rahidian — localizare în cutia craniană, continuând măduva spinării — trimite semnale către cerebel și integrează semnalele primite de la măduva spinării",
       "Talamusul — componentă a diencefalului — integrează și direcționează către cortexul cerebelar toate semnalele senzoriale (cu excepția gustului)",
       "Puntea — localizare superioară față de bulbul rahidian și inferioară față de mezencefal — funcție de releu între medulla oblongata și emisferele cerebrale"
     ],
@@ -2348,8 +2351,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
       "Cei doi ventriculi laterali comunică între ei printr-un orificiu — foramen interventricular",
       "Conțin lichid cefalorahidian, un lichid asemănător cu plasma și care se recoltează întotdeauna prin puncție cerebrală",
       "Ventriculul IV este situat posterior de trunchiul cerebral și anterior de cerebel",
-      "Ventriculul III este situat la nivelul diencefalului și comunică cu ventriculul IV prin",
-      "Ventriculii laterali (1 și II) sunt situați în interiorul emisferelor cerebelului apeductul cerebral"
+      "Ventriculii laterali (I și II) sunt situați în interiorul emisferelor cerebelului",
+      "Ventriculul III este situat la nivelul diencefalului și comunică cu ventriculul IV prin apeductul cerebral",
     ],
     "corect": [0, 2, 4]
   },
@@ -2371,7 +2374,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "raspunsuri": [
       "Lobul parietal este situat posterior de lobul frontal, de care este separat prin șanțul central și prezintă regiuni răspunzătoare de înțelegerea vorbirii",
       "Lobul frontal este situat în partea anterioară a emisferei cerebrale, la nivelul lui fiind localizată aria motorie principală",
-      "Lobul temporal este situat superior de șanțul lateral și prezintă aria de integrare pentru auz ȘI văz",
+      "Lobul temporal este situat superior de șanțul lateral și prezintă aria de integrare pentru auz și văz",
       "Lobul occipital este situat în partea posterioară a fiecărei emisfere cerebrale și prezintă la nivelul său zone pentru vederea controlaterală și bilaterală",
       "Lobul frontal este asociat cu creativitatea, rațiunea și învățarea"
     ],
@@ -2381,7 +2384,7 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_199",
     "text": "Identificați afirmațiile adevărate despre trunchiul cerebral:",
     "raspunsuri": [
-      "Este constituit din trei etaje situate astfel: măduva oblongata -— între bulbul rahidian și punte, puntea — între medulla oblongata și mezencefal, mezencefalul — între punte și diencefal",
+      "Este constituit din trei etaje situate astfel: măduva oblongata — între bulbul rahidian și punte, puntea — între medulla oblongata și mezencefal, mezencefalul — între punte și diencefal",
       "Puntea, situată între bulbul rahidian și mezencefal, este o proeminență care conține fibre nervoase care transmit mesaje în ambele sensuri între medulla oblongata și emisferele cerebrale",
       "Prezintă pe suprafața sa originea reală a zece perechi de nervi cranieni (perechile I-X)",
       "La nivelul bulbului se identifică decusația piramidală, unde se încrucișează o parte a fibrelor nervoase descendente",
@@ -2393,7 +2396,8 @@ adaugaIntrebari("cap3", "Țesutul nervos. Organizarea sistemului nervos",
     "id": "cap3_200",
     "text": "Care dintre afirmațiile următoare referitoare la nervii spinali sunt adevărate?",
     "raspunsuri": [
-      "Dinspre cranial spre caudal, prezintă următoarea succesiune: 8 perechi cervicale, 12 perechi toracice, 5 perechi sacrale, 5 perechi lombare și o pereche coccigiană și au originea aparentă la nivelul măduvei spinării prin intermediul rădăcinilor dorsale și ventrale",
+      "Dinspre cranial spre caudal, prezintă următoarea succesiune: 8 perechi cervicale, 12 perechi toracice, 5 perechi sacrale, 5 perechi lombare și o pereche coccigiană",
+      "Își au originea aparentă la nivelul măduvei spinării prin intermediul rădăcinilor dorsale și ventrale",
       "Dinspre inferior spre superior prezintă următoarea succesiune: o pereche coccigiană, 5 perechi sacrale, 5 perechi lombare, 12 perechi toracice și 8 perechi cervicale",
       "Fac parte din sistemul nervos periferic și sunt în număr de 12 de perechi, asigurând comunicarea dintre măduva spinării și diverse regiuni ale emisferelor cerebrale",
       "Fac parte din sistemul nervos periferic și sunt în număr de 31 de perechi, asigurând comunicarea dintre măduva spinării și diverse părți ale corpului"

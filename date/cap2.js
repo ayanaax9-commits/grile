@@ -187,7 +187,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "text": "Care dintre următoarele asocieri sunt corecte?",
     "raspunsuri": [
       "Canale de trecere pentru ioni și molecule — joncțiuni de tip „gap” — prezente în țesutul muscular striat cardiac",
-      "Membrană bazală — materiale non-celulare - ancorare a țesutului epitelial de cel conjunctiv subiacent",
+      "Membrană bazală — materiale non-celulare —ancorare a țesutului epitelial de cel conjunctiv subiacent",
       "Joncțiuni aderențiale — structuri macroscopice — cuplarea strânsă a celulelor între ele",
       "Joncțiuni strânse — dispunere de jur împrejurul celulelor — prezența unor porțiuni de fuziune a membranelor celulare",
       "Joncțiuni aderențiale — prezența fibrilelor de elastină — prezența spațiului intercelular de aproximativ 24mm"
@@ -234,7 +234,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "id": "cap2_20",
     "text": "Selectați afirmațiile adevărate referitoare la țesuturile epiteliale:",
     "raspunsuri": [
-      "Țesutul epitelial acoperă suprafața corpului, căptușește cavitățile din interiorul acestuia Și intră în alcătuirea glandelor endocrine și exocrine",
+      "Țesutul epitelial acoperă suprafața corpului, căptușește cavitățile din interiorul acestuia și intră în alcătuirea glandelor endocrine și exocrine",
       "Țesutul adipos este un tip de țesut epitelial care reprezintă un depozit lipidic cu funcție de amortizare a șocurilor",
       "Pot îndeplini numeroase funcții, printre care protecția țesuturilor subiacente împotriva deshidratării",
       "Sunt formate din celule epiteliale care pot avea forme turtite, cubice sau cilindrice",
@@ -404,7 +404,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Este denumit și mezoteliu. Prezintă celule rotunjite dispuse în 6-7 straturi. Are rol de protecție",
       "Este format din câteva straturi de celule (16-17). Tapetează ureterele. Celulele se rotunjesc atunci când vezica urinară este în stare de distensie",
-      "Este format din câteva straturi de celule rotunjite atunci când vezica biliară este în stare relaxată. Celulele uroteliului se aplatizează când vezica se află în stare de distensie. Est prezent în uretră",
+      "Este format din câteva straturi de celule rotunjite atunci când vezica biliară este în stare relaxată. Celulele uroteliului se aplatizează când vezica se află în stare de distensie. Este prezent în uretră",
       "Este denumit și uroteliu. Tapetează ureterele și vezica urinară. Celulele sale își modifică forma ca reacție la distensie",
       "Este un epiteliu stratificat. Are ca principală funcție protecția. Celulele aplatizate în starea relaxată a vezicii urinare se rotunjesc în starea de distensie a acesteia"
     ],
@@ -513,8 +513,8 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Celulele epiteliale cu capacitate secretorie din alcătuirea glandelor endocrine sintetizează substanțe chimice cu rol reglator și cu structură chimică diversă",
       "Celulele epiteliale cu capacitate secretorie din alcătuirea glandelor endocrine sintetizează substanțe chimice numite hormoni",
       "Hormonii produși de celulele glandelor endocrine ajung în sânge prin canale (ducte) de excreție",
-      "Glandele se pot clasifica în endocrine (cu secreție externă) ȘI exocrine (cu secreție internă)",
-      "Glandele exocrine secretă enzime și alți produși, care sunt eliminați prin canale (ducte) excretoare"
+      "Glandele se pot clasifica în endocrine (cu secreție externă) și exocrine (cu secreție internă)",
+      "Glandele exocrine secretă enzime și alți produși care sunt eliminați prin canale (ducte) excretoare"
     ],
     "corect": [0, 1, 4]
   },
@@ -645,7 +645,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Sunt formate dintr-un epiteliu și țesut conjunctiv subiacent",
       "În funcție de fluidul care le umectează, se descriu membrane mucoase și membrane seroase",
       "În aponevroze, tendoane și ligamente, membranele au o structură epitelială ordonată",
-      "Membranele mucoase au de obicei trei straturi (epiteliu, lamina propria, musculara mucoase1)",
+      "Membranele mucoase au de obicei trei straturi (epiteliu, lamina propria, musculara mucoasei)",
       "Membranele seroase (pleura, pericardul și peritoneul) sunt lubrifiate și permit mișcări fără fricțiune"
     ],
     "corect": [2]
@@ -694,7 +694,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Elastină — proteină — constituent al fibrelor elastice",
       "Reticulină — structură colagenică — fibre subțiri delicate — suport pentru capilare",
       "Reticulină — fibre groase de colagen — traiecte aleatorii — țesut conjunctiv dens ordonat",
-      "Colagen -— proteină fibrilară — organizare sub formă de fibre — dispunere în fascicule paralele — tendoane, aponevroze"
+      "Colagen — proteină fibrilară — organizare sub formă de fibre — dispunere în fascicule paralele — tendoane, aponevroze"
     ],
     "corect": [1, 2, 4]
   },
@@ -742,7 +742,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Cartilaj elastic — urechea externă, epiglotă",
       "Țesut conjunctiv reticulat — splină, suprafața inimii",
       "Țesut conjunctiv dens ordonat — tendoane, ligamente",
-      "Cartilaj fibros — simfiza pubiană, discurile intervertebrale în tendoane, ligamente și aponevroze țesut conjunctiv care conține celule ce ate de țesut conjunctiv propriu-zis localizat la"
+      "Cartilaj fibros — simfiza pubiană, discurile intervertebrale"
     ],
     "corect": [0, 3]
   },
@@ -835,10 +835,10 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "text": "Alegeți, dintre cele de mai jos, asocierile corecte referitoare la diferitele tipuri de cartilaj:",
     "raspunsuri": [
       "Cartilaj hialin — condrocite dispuse în lacune — extremitățile oaselor lungi, schelet fetal, trahee și bronhii",
-      "Cartilaj hialin — osteocite (dispuse în lacune) — cel mai răspândit țesut cartilaginos - cel mai rezistent țesut cartilaginos",
+      "Cartilaj hialin — osteocite (dispuse în lacune) — cel mai răspândit țesut cartilaginos —cel mai rezistent țesut cartilaginos",
       "Cartilaj elastic — fibre elastice flexibile, întretăiate și ramificate — epiglotă, ureche externă și trompa lui Eustachio",
       "Cartilaj fibros — cel mai rezistent tip de cartilaj — prezent la nivelul simfizei pubiene",
-      "Cartilaj fibros — fibre de elastină dispuse în fascicule subțiri, aproximativ paralele - aspect fibros granulos"
+      "Cartilaj fibros — fibre de elastină dispuse în fascicule subțiri, aproximativ paralele —aspect fibros granulos"
     ],
     "corect": [0, 2, 3]
   },
@@ -872,7 +872,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Osteoblaste — resorb componentele osului — se transformă în osteoclaste",
       "Țesut osos — cel mai dur țesut conjunctiv — osteoblaste, osteocite, osteoclaste",
-      "Osteocite - celule mature provenite din osteoblaste - localizate în lacune unite între ele prin canalicule",
+      "Osteocite —celule mature provenite din osteoblaste —localizate în lacune unite între ele prin canalicule",
       "Osteoblaste — capacitate de resorbție și remodelare a osului — celule resorbante",
       "Osteoclaste — celule resorbante — rol în remodelarea și resorbția osului — furnizează organismului calciu și fosfat"
     ],
@@ -1192,7 +1192,8 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_100",
-    "text": "Citiți enumerările de mai jos notate cu cifre de la 1 la 5. 1. Endoteliul; țesutul pseudostratificat cilindric prezent în porțiuni din sistemul reproducător masculin; epiteliul de la suprafața ovarului/ 2. Țesut osos compact; țesutul adipos din spatele globilor oculari; țesutul conjunctiv dens din tendoane/ 3. Epiteliul care căptușește intestinul subțire; epiteliul trompelor uterine; endoteliul vaselor de sânge și limfatice/ 4. Țesutul adipos situat sub piele; cartilajul fibros situat între componentele osoase ale coloanei vertebrale; tendonul care atașează mușchiul de os/ 5. Hipofiza; timusul; tiroida; glandele suprarenale. Selectați la răspunsuri litera A dacă 1 și 3 conțin exemple de țesuturi epiteliale, litera B dacă 2 și 4 conțin doar exemple de țesuturi epiteliale, litera C dacă 1 și 3 conțin exemple de țesuturi cu un singur strat de celule, litera D dacă 5 conține exemple de glande exocrine, litera E dacă 4 conține doar exemple de țesuturi conjunctive:",
+    "text": "Citiți enumerările de mai jos notate cu cifre de la 1 la 5. Selectați la răspunsuri litera A dacă 1 și 3 conțin exemple de țesuturi epiteliale, litera B dacă 2 și 4 conțin doar exemple de țesuturi epiteliale, litera C dacă 1 și 3 conțin exemple de țesuturi cu un singur strat de celule, litera D dacă 5 conține exemple de glande exocrine, litera E dacă 4 conține doar exemple de țesuturi conjunctive:",
+    "imagine": "img/cap2_100.png",
     "raspunsuri": [
       "A",
       "B",
@@ -1240,7 +1241,8 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_104",
-    "text": "Citiți cele 5 afirmații numerotate cu cifre de la 1 la 5. 1.Mucusul este un material vâscos, secretat de celulele caliciforme din epiteliul simplu cilindric al tractului digestiv/ 2. Mucoasele acoperă suprafața exterioară a viscerelor și sunt reprezentate de către foițele viscerale ale pleurei, pericardului și peritoneului/ 3.La o glandă merocrină, secreția difuzează în afara celulelor, acestea rămânând intacte în timpul secreției/ 4.Epiteliul stratificat pavimentos se regăsește în endoteliul vaselor de sânge și al vaselor limfatice/ 5.Epiteliul specializat pentru funcția secretorie se mai numește și epiteliu glandular/ Alegeți literele corespunzătoare astfel: A dacă sunt adevărate afirmațiile 1, 2 și 3, B dacă sunt adevărate afirmațiile 1, 3 și 5, C dacă sunt false afirmațiile 2 și 4, D dacă 1 este adevărată și 2 falsă, E dacă 1 și 5 sunt adevărate și 3 este falsă:",
+    "text": "Citiți cele 5 afirmații numerotate cu cifre de la 1 la 5. Alegeți literele corespunzătoare astfel: A dacă sunt adevărate afirmațiile 1, 2 și 3, B dacă sunt adevărate afirmațiile 1, 3 și 5, C dacă sunt false afirmațiile 2 și 4, D dacă 1 este adevărată și 2 falsă, E dacă 1 și 5 sunt adevărate și 3 este falsă:",
+    "imagine": "img/cap2_104.png",
     "raspunsuri": [
       "A",
       "B",
@@ -1354,7 +1356,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
       "Este alcătuită din epiderm, derm și mezoderm",
       "Are greutatea de aproximativ 40% din greutatea totală a corpului",
       "Protejează organismul împotriva pierderilor de lichide",
-      "Facilitează pătrunderea în corp a microorganismelor sau a altor factori iritanți (mecanici ȘI fizici)"
+      "Facilitează pătrunderea în corp a microorganismelor sau a altor factori iritanți (mecanici și fizici)"
     ],
     "corect": [1, 2, 4]
   },
@@ -1484,7 +1486,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Stratul bazal — cel mai superficial — conține cheratohialinul",
       "Stratul cornos — cel mai profund — celule conjunctive care se descuamează",
-      "Stratul cornos -— cheratina intracelulară înlocuiește aproape în totalitate citoplasma celulelor — 25-30 straturi de celule pavimentoase moarte",
+      "Stratul cornos — cheratina intracelulară înlocuiește aproape în totalitate citoplasma celulelor — 25-30 straturi de celule pavimentoase moarte",
       "Stratul lucid — deasupra stratului granulos — apare doar la nivelul pielii groase",
       "Stratul granulos — conține cheratohialin, dar nu și cheratină — conține 30-50 rânduri de celule aplatizate"
     ],
@@ -1930,7 +1932,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Reprezintă una dintre anexele importante ale pielii",
       "Se poate întâlni pe întreaga suprafață a corpului (inclusiv pe tălpi și palme) și are rol protector",
-      "În alcătuirea lui intră un ax ce se extinde în interiorul pielii, spre hipoderm, Și o rădăcină",
+      "În alcătuirea lui intră un ax ce se extinde în interiorul pielii, spre hipoderm, și o rădăcină",
       "Rădăcina firului de păr se află în interiorul foliculului pilos și este învelită de tecile radiculare",
       "Foliculul pilos este alcătuit dintr-o grupare de celule dermice care formează o structură tubulară"
     ],
@@ -2226,7 +2228,8 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_186",
-    "text": "Citiți cu atenție cele cinci enunțuri de mai jos, notate cu cifre de la 1 la 5. 1. Cuticula acoperă parțial unghia la capătul proximal al acesteia, iar în apropierea ei se află lunula/ 2.  Epidermul este stratul intern, mai gros al pielii situat sub derm/ 3.  Glandele prezente în piele se împart în două mari categorii: glande sebacee și glande sudoripare/ 4. Dermul comunică îndeaproape cu epidermul prin intermediul membranei bazale/ 5. Firul de păr constă dintr-un ax care se extinde în exteriorul pielii și o rădăcină care se găsește în interiorul foliculului pilos. Selectați la răspunsuri literele astfel: A — dacă enunțurile 1, 3, 5 descriu corect anexe ale pielii; B- dacă 1 și 3 se referă la unghie; C- dacă cel puțin unul dintre cele 5 enunțuri este fals; D - dacă enunțul 4 conține informați corecte referitoare la straturile mari ale pielii; E - dacă 3, 4 și 5 sunt enunțuri adevărate:",
+    "text": "Citiți cu atenție cele cinci enunțuri de mai jos, notate cu cifre de la 1 la 5. Selectați la răspunsuri literele astfel: A — dacă enunțurile 1, 3, 5 descriu corect anexe ale pielii; B- dacă 1 și 3 se referă la unghie; C- dacă cel puțin unul dintre cele 5 enunțuri este fals; D - dacă enunțul 4 conține informați corecte referitoare la straturile mari ale pielii; E - dacă 3, 4 și 5 sunt enunțuri adevărate:",
+    "imagine": "img/cap2_186.png",
     "raspunsuri": [
       "A",
       "B",
@@ -2298,7 +2301,8 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_192",
-    "text": "1. Epiteliul specializat secretor al glandelor se mai numește și epiteliu glandular/ 2. Celulele glandelor holocrine (exemplu — glandele sebacee din piele) rămân intacte în timpul secreției/ 3. Neuronii bipolari prezintă un axon și o dendrită și pot fi întâlniți în retină/ 4. Celulele gliale, denumite generic nevroglii, sunt mai numeroase decât neuronii/ 5. Joncțiunile „gap” sunt denumite joncțiuni aderențiale. Celulele epiteliale prezintă doar rareori joncțiuni strânse și aderențiale. Alegeți răspunsurile corecte astfel: A — dacă 3 din cele 5 enunțuri de mai jos sunt adevărate, B — dacă există mai puțin de 4 enunțuri false, C — dacă enunțurile de la punctele 1, 2 și 3 se referă la epitelii, D — dacă afirmațiile de la punctul 5 sunt adevărate și E — dacă afirmațiile de la punctele 3 și 4 sunt adevărate și caracterizează aspecte ale țesutului nervos.",
+    "text": "Alegeți răspunsurile corecte astfel: A — dacă 3 din cele 5 enunțuri de mai jos sunt adevărate, B — dacă există mai puțin de 4 enunțuri false, C — dacă enunțurile de la punctele 1, 2 și 3 se referă la epitelii, D — dacă afirmațiile de la punctul 5 sunt adevărate și E — dacă afirmațiile de la punctele 3 și 4 sunt adevărate și caracterizează aspecte ale țesutului nervos.",
+    "imagine": "img/cap2_192.png",
     "raspunsuri": [
       "A",
       "B",
@@ -2310,7 +2314,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_193",
-    "text": "Alegeți acele răspunsuri care conțin ambele afirmații adevărate, aflate în relație efect - cauză:",
+    "text": "Alegeți acele răspunsuri care conțin ambele afirmații adevărate, aflate în relație efect — cauză:",
     "raspunsuri": [
       "Sângele este un tip aparte de țesut conjunctiv. Sângele are în compoziția lui apa, rezultată din deshidratarea celulelor sanguine",
       "Osul are o rezistență crescută față de cartilaj. Substanța fundamentală a țesutului osos conține săruri minerale de calciu și fosfați",
@@ -2346,7 +2350,8 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
   },
   {
     "id": "cap2_196",
-    "text": "1. Desmozomii sunt joncțiuni intercelulare prezente la nivelul celulelor epiteliale și implică prezența unor fibrile intracelulare de cheratină ancorate de membrana îngroșat/ 2. Țesutul nervos recepționează stimuli și asigură transmiterea și interpretarea impulsurilor nervoase/ 3. Glandă simplă are un canal (duct) excretor ramificat/ 4. Hidroxiapatita este o substanță minerală cu structură cristalină, conținând ioni de calciu/ 5. Epiteliile pot avea și o importantă funcție secretorie atunci când sunt organizate sub formă de glande. Răspundeți cu A — dacă 3 afirmații sunt adevărate, cu B — dacă cel puțin 2 afirmații descriu funcții ale unor țesuturi, cu C — dacă trei afirmații sunt false, cu D — dacă există cel puțin o afirmație legată de țesuturi cu rol în comunicare, cu E — dacă există o afirmație care să descrie pleura:",
+    "text": "Răspundeți cu A — dacă 3 afirmații sunt adevărate, cu B — dacă cel puțin 2 afirmații descriu funcții ale unor țesuturi, cu C — dacă trei afirmații sunt false, cu D — dacă există cel puțin o afirmație legată de țesuturi cu rol în comunicare, cu E — dacă există o afirmație care să descrie pleura:",
+    "imagine": "img/cap2_196.png",
     "raspunsuri": [
       "A",
       "B",
@@ -2374,7 +2379,7 @@ adaugaIntrebari("cap2", "Țesuturi. Sistemul tegumentar",
     "raspunsuri": [
       "Glicogen — polizaharid — protecție a pielii împotriva radiațiilor ultraviolete",
       "Colagenul — structură fibrilară — matricea țesuturilor conjunctive",
-      "Vitamina D -— sintetizată sub acțiunea razelor ultraviolete — sintetizată din molecule precursor acumulate la nivelul pielii",
+      "Vitamina D — sintetizată sub acțiunea razelor ultraviolete — sintetizată din molecule precursor acumulate la nivelul pielii",
       "Eleidina — glicoproteină membranară — precursor pentru cheratohialin",
       "Alopecia — pigment din structura firului de păr — sintetizat în afecțiuni ale pielii scalpului"
     ],
