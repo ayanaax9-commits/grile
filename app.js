@@ -219,6 +219,9 @@ function renderQuestion() {
   $("bar").style.width = `${(test.index / total) * 100}%`;
   $("q-chapter").textContent = q.multi ? "Alege toate răspunsurile corecte" : "";
   $("q-text").textContent = q.text;
+  const im = $("q-img");
+  if (q.imagine) { im.src = q.imagine; im.hidden = false; }
+  else { im.hidden = true; im.removeAttribute("src"); }
   $("feedback").textContent = "";
   $("feedback").className = "";
   $("q-nr").textContent = "";
@@ -265,16 +268,16 @@ function reveal(q) {
     if (!corect && sel.includes(i)) b.classList.add("wrong");
   });
   const p = scor(q, sel);
-  if (p === 1) {
-    $("feedback").textContent = "Corect.";
-    $("feedback").className = "ok";
-  } else if (p > 0) {
-    $("feedback").textContent = `Parțial corect: ${fmt(p)} din 1 punct. Răspunsuri corecte: ${textCorecte(q)}`;
-    $("feedback").className = "partial";
-  } else {
-    $("feedback").textContent = `Greșit. Răspuns corect: ${textCorecte(q)}`;
-    $("feedback").className = "bad";
-  }
+if (p === 1) {
+  $("feedback").textContent = "Corect.";
+  $("feedback").className = "ok";
+} else if (p > 0) {
+  $("feedback").textContent = `Parțial corect (${fmt(p)} din 1 punct)`;
+  $("feedback").className = "partial";
+} else {
+  $("feedback").textContent = "Greșit";
+  $("feedback").className = "bad";
+}
   $("q-nr").textContent = `Grila nr. ${q.nr} (${q.capNume})`;
   $("next").hidden = false;
   $("next").textContent = etichetaNext();
@@ -328,6 +331,7 @@ function finish() {
     <div class="card">
       <p class="muted">${esc(r.q.capNume)} · grila nr. ${r.q.nr}</p>
       <p><strong>${esc(r.q.text)}</strong></p>
+      ${imgHTML(r.q)}
       ${reviewHTML(r.q, r.q.opt.map(o => o.i), r.alese.map(o => o.i))}
       ${r.p > 0 ? `<p class="partial">Punctaj parțial: ${fmt(r.p)} din 1</p>` : ""}
       <textarea data-qid="${esc(r.q.id)}" placeholder="Comentariu (de ce ai greșit?)">${esc(coment[r.q.id] || "")}</textarea>
@@ -417,6 +421,7 @@ function greseliHTML(rows) {
         <span class="qs ${cls}">${semn}</span>
       </summary>
       <p class="muted">${esc(q.capNume)}</p>
+      ${imgHTML(q)}
       ${reviewHTML(q, r.ordine || q.raspunsuri.map((_, i) => i), r.alese)}
       <p class="${cls}">${txt}</p>
       <textarea data-qid="${esc(q.id)}" placeholder="Comentariu">${esc(coment[q.id] || "")}</textarea>

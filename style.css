@@ -49,3 +49,14 @@ textarea { width: 100%; min-height: 60px; margin-top: 8px; padding: 8px; font: i
 
 .fq { width: 62px; color: var(--muted); font-size: .85rem; white-space: nowrap; }
 .test-check { margin-right: 8px; }
+
+.q-img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 8px 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.q-img[hidden] { display: none; }
