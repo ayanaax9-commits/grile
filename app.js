@@ -26,6 +26,9 @@ function shuffle(arr) {
   return a;
 }
 
+const imgHTML = (q) => q.imagine
+  ? `<img class="q-img" src="${esc(q.imagine)}" alt="Enunț ilustrat">` : "";
+
 // ---------- Date salvate în browser ----------
 const KEY_ISTORIC = "grila_istoric";    // [{qid, cap, ok, ts}]
 const KEY_COMENT  = "grila_comentarii"; // {qid: "text"}
@@ -91,23 +94,7 @@ function renderSetup() {
 }
 
 // ---------- Pauză / continuare ----------
-function renderResume() {
-  const s = load(KEY_IN_CURS, null);
-  const box = $("resume-box");
-  if (!s) { box.innerHTML = ""; return; }
-  const facute = s.alegeri.filter(a => a && a.length).length;
-  box.innerHTML = `
-    <div class="card">
-      <p><strong>Ai un test în pauză</strong></p>
-      <p class="muted">${facute} din ${s.intrebari.length} grile făcute · ${esc(new Date(s.ts).toLocaleString("ro-RO"))}</p>
-      <button id="resume" class="primary">Continuă testul</button>
-      <button id="discard" class="danger">Șterge testul salvat</button>
-    </div>`;
-  $("resume").onclick = reia;
-  $("discard").onclick = () => {
-    if (confirm("Ștergi testul salvat?")) { localStorage.removeItem(KEY_IN_CURS); renderResume(); }
-  };
-}
+function renderResume() {}
 
 // returnează true dacă s-a salvat (false dacă testul era de fapt gata și s-a terminat)
 function salveazaTest() {
@@ -676,7 +663,8 @@ $("sel-none").onclick = () => {
 
 // ---------- Backup ----------
 $("export").onclick = () => {
-  const data = { istoric: load(KEY_ISTORIC, []), comentarii: load(KEY_COMENT, {}), inCurs: load(KEY_IN_CURS, null) };
+  const data = { istoric: load(KEY_ISTORIC, []), comentarii: load(KEY_COMENT, {}), inCurs: load(KEY_IN_CURS, null),
+  capcane: load("grila_capcane", []), pauzate: load("grila_pauzate", []) };
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }));
   a.download = "backup-grila.json";
@@ -692,6 +680,8 @@ $("import").onchange = (e) => {
       if (!Array.isArray(d.istoric)) throw new Error();
       save(KEY_ISTORIC, d.istoric);
       save(KEY_COMENT, d.comentarii || {});
+      if (d.capcane) save("grila_capcane", d.capcane);
+      if (d.pauzate) save("grila_pauzate", d.pauzate);
       if (d.inCurs) save(KEY_IN_CURS, d.inCurs);
       else localStorage.removeItem(KEY_IN_CURS);
       renderStats();

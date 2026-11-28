@@ -133,4 +133,6 @@
     if (goale && !confirm(`Ai ${goale} întrebări fără răspuns (se punctează cu 0). Predai foaia?`)) return;
     finish(); // același calcul de scor, istoric și rezultate ca în celelalte moduri
   };
+  window.renderSheet = renderSheet;
+  window.updateCount = updateCount;
 })();
